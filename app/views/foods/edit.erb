@@ -1,0 +1,25 @@
+ <%=form_with model: @food do |form|%>
+    <div>
+        <%=form.label :restaurant_id%>
+        <%=form.collection_select :restaurant_id, Restaurant.all, :id, :name %>
+    </div>
+    <div>
+        <%=form.label :name%>
+        <%=form.text_field :name%>
+    </div>
+    <div>       
+        <%=form.label :price %>
+        <%=form.number_field :price %>
+    </div>
+     <div>
+        <%=form.label :description %>
+        <%=form.text_area :description %>
+    </div>
+    <div>
+        <%=form.label :img_url%>
+        <%=form.text_field :img_url%>
+    </div>
+
+    <%=form.submit %>
+
+<%end%>

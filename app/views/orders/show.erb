@@ -1,0 +1,40 @@
+<style> table, th, td {
+    border: 1px solid;
+}
+    table {
+        height: 100px
+    }
+    .image_cap{
+        max-height:300px;
+        width: 100%;
+    }
+    
+</style>
+
+<h1> Order - <%=@order.restaurant.name%></h1>
+
+<table>
+    <thead>
+        <tr>
+        <th>Order #</th>
+        <th>Restaurant</th>
+        <th>Customer</th>
+        <th>Price</th>
+       
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><%= @order.id %></td>
+            <td><%= @order.restaurant.name %></td>
+            <td><%= @order.customer.name %></td>
+            <td><%= @order.price %></td>
+            </tr>
+    </tbody>
+</table>
+<%=link_to "Edit", edit_order_path(@order.id)%><br>
+<%=link_to "Next", order_path(@order.increment)%><br>
+<%=link_to "Back", order_path(@order.decrement)%><br>
+<%=link_to "All Orders", orders_path%><br>
+<%=link_to "Delete", order_path(@order.id), method: "DELETE"%>
+</body>

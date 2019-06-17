@@ -1,25 +1,43 @@
-<h1><%=@restaurant.name%></h1>
-<ul>
-    <li>
-       <%=@restaurant.restaurant_type%>
-    </li>
-    <li>
-       <%=@restaurant.phone_number%>
-    </li>
-    <li>
-       <%=@restaurant.street_address%>
-    </li>
-    <li>
-       <%=@restaurant.zip%>
-    </li>
-    <li>
-       <%=@restaurant.rating%>
-    </li>
-    <li>
-       <%=@restaurant.description%>
-    </li>
-    <li>
-       <%=@restaurant.img_url%>
-    </li>
-</ul>
-<%=link_to "Edit", edit_restaurant_path(@restaurant.id)%>
+<style> table, th, td {
+    border: 1px solid;
+}
+    table {
+        height: 100px
+    }
+    .image_cap{
+        max-height:300px;
+        width: 100%;
+    }
+    
+</style>
+
+<h1> Food - <%=@food.restaurant.name%></h1>
+
+<table>
+    <thead>
+        <tr>
+        <th>Food</th>
+        <th>Restaurant</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Img</th>
+       
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><%= @food.name %></td>
+            <td><%= @food.restaurant.name %></td>
+            <td><%= @food.price %></td>
+            <td><%= @food.description %></td>
+            <td><img class= 'image_cap' src="<%= @food.img_url %>" alt="<%=@food.name %>" /> </td>
+
+            </tr>
+    </tbody>
+</table>
+<%=link_to "Edit", edit_food_path(@food.id)%><br>
+<%=link_to "Next", food_path(@food.increment)%><br>
+<%=link_to "Back", food_path(@food.decrement)%><br>
+<%=link_to "All Food Options", foods_path%><br>
+<%=link_to "Delete", food_path(@food.id), method: "DELETE"%>
+</body>

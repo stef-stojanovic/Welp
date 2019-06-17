@@ -4,6 +4,7 @@ class Customer < ApplicationRecord
     has_many :ordered_foods, through: :orders
     has_many :restaurants, through: :orders
     has_many :restaurants, through: :reviews
+    has_secure_password
 
     def increment
         if self.id == Customer.last.id
