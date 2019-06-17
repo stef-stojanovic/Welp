@@ -5,6 +5,10 @@ class ReviewsController < ApplicationController
     end
 
     def new
+        @review = Review.new
+        if flash[:restaurant_id]
+            @restaurant = Restaurant.find(flash[:restaurant_id])
+        end
     end
 
     def create

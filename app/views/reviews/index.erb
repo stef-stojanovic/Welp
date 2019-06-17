@@ -1,0 +1,12 @@
+<h1>Reviews</h1>
+<ul>
+    <%@reviews.each do |r|%>
+    <li>
+       <%=link_to r.restaurant.name, r%>
+       <%=r.customer.name%>
+    </li>
+    <%end%>
+</ul>
+<h4><%=link_to "Create New Review", new_review_path%><br>
+<%= link_to "Restaurants", restaurants_path %><br>
+<%= link_to "Customers", customers_path %>
