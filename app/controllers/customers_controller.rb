@@ -34,9 +34,3 @@ class CustomersController < ApplicationController
     end
 end
 
-t.string "name"
-t.string "username"
-t.text "password_digest"
-t.text "img_url"
-t.integer "balance"
-t.text "description"
