@@ -21,7 +21,7 @@ class OrdersController < ApplicationController
     
     def update
         order = Order.find(params[:id])
-        order = Order.update(permit_params)
+        order.update(permit_params)
         redirect_to order
     end
     

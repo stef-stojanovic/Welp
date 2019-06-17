@@ -820,3 +820,1298 @@ Processing by RestaurantsController#edit as HTML
 Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/" for ::1 at 2019-06-17 11:11:34 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironstudentaccount/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/flatironstudentaccount/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/flatironstudentaccount/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (13.8ms)
+Completed 200 OK in 43ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers" for ::1 at 2019-06-17 11:11:38 -0500
+Processing by CustomersController#index as HTML
+  Rendering customers/index.erb within layouts/application
+  [1m[36mCustomer Load (0.8ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.erb:11
+  Rendered customers/index.erb within layouts/application (5.5ms)
+Completed 200 OK in 512ms (Views: 449.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-06-17 11:11:45 -0500
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[36mRestaurant Load (1.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.erb:3
+  Rendered restaurants/index.erb within layouts/application (23.4ms)
+Completed 200 OK in 57ms (Views: 39.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/customers/new" for ::1 at 2019-06-17 11:11:50 -0500
+Processing by CustomersController#new as HTML
+  Rendering customers/new.erb within layouts/application
+  Rendered customers/new.erb within layouts/application (2416.0ms)
+Completed 500 Internal Server Error in 2423ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `integer' for #<ActionView::Helpers::FormBuilder:0x00007fe6c3bef288>):
+    19:     </div>
+    20:     <div>
+    21:     <%=form.label :balance %>
+    22:     <%=form.integer :balance %>
+    23:     </div>
+    24:     <div>
+    25:     <%=form.label :description %>
+  
+app/views/customers/new.erb:22:in `block in _app_views_customers_new_erb___1871593209499207242_70314528053360'
+app/views/customers/new.erb:3:in `_app_views_customers_new_erb___1871593209499207242_70314528053360'
+Started GET "/customers/new" for ::1 at 2019-06-17 11:13:41 -0500
+Processing by CustomersController#new as HTML
+  Rendering customers/new.erb within layouts/application
+  Rendered customers/new.erb within layouts/application (384.8ms)
+Completed 500 Internal Server Error in 401ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `integer' for #<ActionView::Helpers::FormBuilder:0x00007fe6c4d15760>):
+    19:     </div>
+    20:     <div>
+    21:     <%=form.label :balance %>
+    22:     <%=form.integer :balance %>
+    23:     </div>
+    24:     <div>
+    25:     <%=form.label :description %>
+  
+app/views/customers/new.erb:22:in `block in _app_views_customers_new_erb___1871593209499207242_70314571180700'
+app/views/customers/new.erb:3:in `_app_views_customers_new_erb___1871593209499207242_70314571180700'
+Started GET "/customers/new" for ::1 at 2019-06-17 11:14:09 -0500
+Processing by CustomersController#new as HTML
+  Rendering customers/new.erb within layouts/application
+  Rendered customers/new.erb within layouts/application (404.6ms)
+Completed 500 Internal Server Error in 415ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `number' for #<ActionView::Helpers::FormBuilder:0x00007fe6c0ecb6f8>):
+    19:     </div>
+    20:     <div>
+    21:     <%=form.label :balance %>
+    22:     <%=form.number :balance %>
+    23:     </div>
+    24:     <div>
+    25:     <%=form.label :description %>
+  
+app/views/customers/new.erb:22:in `block in _app_views_customers_new_erb___1871593209499207242_70314527919760'
+app/views/customers/new.erb:3:in `_app_views_customers_new_erb___1871593209499207242_70314527919760'
+Started GET "/customers/new" for ::1 at 2019-06-17 11:14:29 -0500
+Processing by CustomersController#new as HTML
+  Rendering customers/new.erb within layouts/application
+  Rendered customers/new.erb within layouts/application (324.5ms)
+Completed 500 Internal Server Error in 332ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `numeric' for #<ActionView::Helpers::FormBuilder:0x00007fe6c4f886c8>
+Did you mean?  number_field):
+    19:     </div>
+    20:     <div>
+    21:     <%=form.label :balance %>
+    22:     <%=form.numeric :balance %>
+    23:     </div>
+    24:     <div>
+    25:     <%=form.label :description %>
+  
+app/views/customers/new.erb:22:in `block in _app_views_customers_new_erb___1871593209499207242_70314561897620'
+app/views/customers/new.erb:3:in `_app_views_customers_new_erb___1871593209499207242_70314561897620'
+Started GET "/customers/new" for ::1 at 2019-06-17 11:14:47 -0500
+Processing by CustomersController#new as HTML
+  Rendering customers/new.erb within layouts/application
+  Rendered customers/new.erb within layouts/application (34.4ms)
+Completed 200 OK in 71ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers/new" for ::1 at 2019-06-17 11:15:56 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/customers/new"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/customers" for ::1 at 2019-06-17 11:16:00 -0500
+Processing by CustomersController#index as HTML
+  Rendering customers/index.erb within layouts/application
+  [1m[36mCustomer Load (1.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.erb:11
+  Rendered customers/index.erb within layouts/application (13.6ms)
+Completed 200 OK in 82ms (Views: 67.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/customers/new" for ::1 at 2019-06-17 11:16:53 -0500
+Processing by CustomersController#new as HTML
+  Rendering customers/new.erb within layouts/application
+  Rendered customers/new.erb within layouts/application (15.0ms)
+Completed 200 OK in 73ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers/new" for ::1 at 2019-06-17 11:16:58 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/customers/new"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/customers/new" for ::1 at 2019-06-17 11:17:44 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/customers/new"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/customers/new" for ::1 at 2019-06-17 11:22:52 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironstudentaccount/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [POST] "/customers/new"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/customers/new" for ::1 at 2019-06-17 11:27:32 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/customers/new"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/customers/new" for ::1 at 2019-06-17 11:27:34 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/customers/new"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/customers/new" for ::1 at 2019-06-17 11:29:06 -0500
+Processing by CustomersController#new as HTML
+  Rendering customers/new.erb within layouts/application
+  Rendered customers/new.erb within layouts/application (436.8ms)
+Completed 200 OK in 813ms (Views: 748.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/customers/new" for ::1 at 2019-06-17 11:29:35 -0500
+Processing by CustomersController#new as HTML
+  Rendering customers/new.erb within layouts/application
+  Rendered customers/new.erb within layouts/application (14.8ms)
+Completed 200 OK in 61ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/new" for ::1 at 2019-06-17 11:30:11 -0500
+Processing by CustomersController#new as HTML
+  Rendering customers/new.erb within layouts/application
+  Rendered customers/new.erb within layouts/application (4.6ms)
+Completed 200 OK in 53ms (Views: 26.4ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/customers" for ::1 at 2019-06-17 11:30:29 -0500
+Processing by CustomersController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yzg3NnS3QDG46mQ+z4PzPbHhQBjGtYLCm+m/I51aUqNbd2EpSTKpsvWg7oLAESW4OFg68Wkb0TEx7SxPB/PeBQ==", "customer"=>{"name"=>"Stefan Stojanovic", "username"=>"stefan.stojanovic", "password_digest"=>"[FILTERED]", "img_url"=>"data:image/jpeg;base64,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", "balance"=>"1000", "description"=>"Flatiron Student"}, "commit"=>"Create Customer"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:12
+  [1m[36mCustomer Create (4.4ms)[0m  [1m[32mINSERT INTO "customers" ("name", "username", "password_digest", "img_url", "balance", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Stefan Stojanovic"], ["username", "stefan.stojanovic"], ["password_digest", "1234"], ["img_url", "data:image/jpeg;base64,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"], ["balance", 1000], ["description", "Flatiron Student"], ["created_at", "2019-06-17 16:30:29.651027"], ["updated_at", "2019-06-17 16:30:29.651027"]]
+  ↳ app/controllers/customers_controller.rb:12
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:12
+Redirected to http://localhost:3000/customers/1
+Completed 200 OK in 16ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/customers/1" for ::1 at 2019-06-17 11:30:29 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  Rendered customers/show.erb within layouts/application (2.5ms)
+Completed 200 OK in 49ms (Views: 30.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/customers" for ::1 at 2019-06-17 11:32:28 -0500
+Processing by CustomersController#index as HTML
+  Rendering customers/index.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.erb:11
+  Rendered customers/index.erb within layouts/application (2.9ms)
+Completed 200 OK in 46ms (Views: 41.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/customers/new" for ::1 at 2019-06-17 11:32:33 -0500
+Processing by CustomersController#new as HTML
+  Rendering customers/new.erb within layouts/application
+  Rendered customers/new.erb within layouts/application (6.6ms)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/customers/new" for ::1 at 2019-06-17 11:32:52 -0500
+Processing by CustomersController#new as HTML
+  Rendering customers/new.erb within layouts/application
+  Rendered customers/new.erb within layouts/application (5.8ms)
+Completed 200 OK in 63ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/customers/new" for ::1 at 2019-06-17 11:35:23 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/customers/new"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/customers/new" for ::1 at 2019-06-17 11:35:28 -0500
+Processing by CustomersController#new as HTML
+  Rendering customers/new.erb within layouts/application
+  Rendered customers/new.erb within layouts/application (8.2ms)
+Completed 200 OK in 135ms (Views: 82.1ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/customers" for ::1 at 2019-06-17 11:35:49 -0500
+Processing by CustomersController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5HcqcZ2vQOOrxU/y/6RBUEXVgS+PJiXKzKFTYNjIfwPcOHxuoCqpYOaPxU7wNpfVzGz7xiCIdjlmpcAMQmHzpQ==", "customer"=>{"name"=>"Kurtis Leach", "username"=>"kurtis.leach", "password_digest"=>"[FILTERED]", "img_url"=>"", "balance"=>"50", "description"=>"Flatiron student, future game designer"}, "commit"=>"Create Customer"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:12
+  [1m[36mCustomer Create (2.2ms)[0m  [1m[32mINSERT INTO "customers" ("name", "username", "password_digest", "img_url", "balance", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Kurtis Leach"], ["username", "kurtis.leach"], ["password_digest", "5678"], ["img_url", ""], ["balance", 50], ["description", "Flatiron student, future game designer"], ["created_at", "2019-06-17 16:35:49.695180"], ["updated_at", "2019-06-17 16:35:49.695180"]]
+  ↳ app/controllers/customers_controller.rb:12
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:12
+Redirected to http://localhost:3000/customers/2
+Completed 200 OK in 16ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/customers/2" for ::1 at 2019-06-17 11:35:49 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  Rendered customers/show.erb within layouts/application (2.5ms)
+Completed 200 OK in 120ms (Views: 104.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/customers" for ::1 at 2019-06-17 11:35:55 -0500
+Processing by CustomersController#index as HTML
+  Rendering customers/index.erb within layouts/application
+  [1m[36mCustomer Load (2.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.erb:11
+  Rendered customers/index.erb within layouts/application (10.7ms)
+Completed 200 OK in 63ms (Views: 55.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/customers/1" for ::1 at 2019-06-17 11:35:58 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (2.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  Rendered customers/show.erb within layouts/application (5.0ms)
+Completed 200 OK in 72ms (Views: 66.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/customers/2" for ::1 at 2019-06-17 11:36:00 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  Rendered customers/show.erb within layouts/application (6.2ms)
+Completed 200 OK in 124ms (Views: 114.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/customers/2" for ::1 at 2019-06-17 11:36:52 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  Rendered customers/show.erb within layouts/application (2.6ms)
+Completed 200 OK in 48ms (Views: 42.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/customers/1" for ::1 at 2019-06-17 11:36:55 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  Rendered customers/show.erb within layouts/application (1.1ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/customers/0" for ::1 at 2019-06-17 11:36:56 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"0"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+Completed 404 Not Found in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Customer with 'id'=0):
+  
+app/controllers/customers_controller.rb:17:in `show'
+Started GET "/customers/1" for ::1 at 2019-06-17 11:49:30 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (1.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mRestaurant Load (1.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  Rendered customers/show.erb within layouts/application (39.0ms)
+Completed 200 OK in 124ms (Views: 74.4ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/customers/2" for ::1 at 2019-06-17 11:49:32 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  Rendered customers/show.erb within layouts/application (4.7ms)
+Completed 200 OK in 47ms (Views: 40.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/customers/3" for ::1 at 2019-06-17 11:49:34 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+Completed 404 Not Found in 4ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Customer with 'id'=3):
+  
+app/controllers/customers_controller.rb:17:in `show'
+Started GET "/customers/1" for ::1 at 2019-06-17 11:50:02 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (1.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  Rendered customers/show.erb within layouts/application (4.5ms)
+Completed 200 OK in 79ms (Views: 41.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/customers/2" for ::1 at 2019-06-17 11:50:05 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  Rendered customers/show.erb within layouts/application (3.3ms)
+Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/customers/3" for ::1 at 2019-06-17 11:50:07 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+Completed 404 Not Found in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Customer with 'id'=3):
+  
+app/controllers/customers_controller.rb:17:in `show'
+Started GET "/customers/2" for ::1 at 2019-06-17 11:50:19 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (5.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:10
+  Rendered customers/show.erb within layouts/application (9.1ms)
+Completed 200 OK in 132ms (Views: 82.4ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/customers/1" for ::1 at 2019-06-17 11:50:21 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  Rendered customers/show.erb within layouts/application (4.3ms)
+Completed 200 OK in 50ms (Views: 44.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/customers/2" for ::1 at 2019-06-17 11:50:23 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:10
+  Rendered customers/show.erb within layouts/application (13.8ms)
+Completed 200 OK in 93ms (Views: 85.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/customers/1" for ::1 at 2019-06-17 11:50:24 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  Rendered customers/show.erb within layouts/application (7.1ms)
+Completed 200 OK in 63ms (Views: 55.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/customers" for ::1 at 2019-06-17 11:52:08 -0500
+Processing by CustomersController#index as HTML
+  Rendering customers/index.erb within layouts/application
+  [1m[36mCustomer Load (1.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.erb:11
+  Rendered customers/index.erb within layouts/application (20.7ms)
+Completed 200 OK in 81ms (Views: 55.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/customers/1" for ::1 at 2019-06-17 11:52:09 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:17
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:18
+  Rendered customers/show.erb within layouts/application (11.1ms)
+Completed 200 OK in 84ms (Views: 60.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/customers/2" for ::1 at 2019-06-17 11:52:10 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:10
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:17
+  Rendered customers/show.erb within layouts/application (11.4ms)
+Completed 200 OK in 63ms (Views: 56.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/customers/1" for ::1 at 2019-06-17 11:52:12 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:17
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:18
+  Rendered customers/show.erb within layouts/application (12.3ms)
+Completed 200 OK in 55ms (Views: 47.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/customers/2" for ::1 at 2019-06-17 11:52:13 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:10
+  [1m[36mCACHE Customer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:17
+  Rendered customers/show.erb within layouts/application (6.4ms)
+Completed 200 OK in 75ms (Views: 71.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/customers/1" for ::1 at 2019-06-17 11:52:14 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:17
+  [1m[36mCACHE Customer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:18
+  Rendered customers/show.erb within layouts/application (7.2ms)
+Completed 200 OK in 45ms (Views: 40.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/customers/2" for ::1 at 2019-06-17 11:52:16 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:10
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:17
+  Rendered customers/show.erb within layouts/application (10.4ms)
+Completed 200 OK in 64ms (Views: 60.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/customers/1" for ::1 at 2019-06-17 13:07:40 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (2.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.8ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:17
+  [1m[36mCACHE Customer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:18
+  Rendered customers/show.erb within layouts/application (23.5ms)
+Completed 200 OK in 131ms (Views: 97.5ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/customers/1/edit" for ::1 at 2019-06-17 13:07:42 -0500
+Processing by CustomersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:21
+  Rendering customers/edit.erb within layouts/application
+  Rendered customers/edit.erb within layouts/application (311.0ms)
+Completed 500 Internal Server Error in 319ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `number' for #<ActionView::Helpers::FormBuilder:0x00007fa929e6d370>):
+    13:     </div>
+    14:     <div>
+    15:         <%=f.label :balance%>
+    16:         <%=f.number :balance%>
+    17:     </div>
+    18:     <div>
+    19:         <%=f.label :description%>
+  
+app/views/customers/edit.erb:16:in `block in _app_views_customers_edit_erb___4504444273042274817_70182300044280'
+app/views/customers/edit.erb:1:in `_app_views_customers_edit_erb___4504444273042274817_70182300044280'
+Started GET "/customers/1/edit" for ::1 at 2019-06-17 13:07:59 -0500
+Processing by CustomersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:21
+  Rendering customers/edit.erb within layouts/application
+  Rendered customers/edit.erb within layouts/application (7.8ms)
+Completed 200 OK in 46ms (Views: 41.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/customers/1/edit" for ::1 at 2019-06-17 13:08:37 -0500
+Processing by CustomersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:21
+  Rendering customers/edit.erb within layouts/application
+  Rendered customers/edit.erb within layouts/application (5.7ms)
+Completed 200 OK in 44ms (Views: 39.9ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/customers/1" for ::1 at 2019-06-17 13:08:43 -0500
+Processing by CustomersController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KOBuYjpl7rc3pVA+9dIt4kHxZ9PUd+0ytgI7/8sOXt4Qrzh9B+AHNHrv2oL6QPtnyEgdOnvZvsEcBqiTUafSeA==", "customer"=>{"name"=>"Stefan Stojanovic", "username"=>"stefan.stojanovic", "img_url"=>"data:image/jpeg;base64,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", "balance"=>"1000", "description"=>"Flatiron"}, "commit"=>"Update Customer", "id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:25
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[36mCustomer Update (2.2ms)[0m  [1m[33mUPDATE "customers" SET "description" = ?, "updated_at" = ? WHERE "customers"."id" = ?[0m  [["description", "Flatiron"], ["updated_at", "2019-06-17 18:08:43.893890"], ["id", 1]]
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[36mCustomer Update (1.5ms)[0m  [1m[33mUPDATE "customers" SET "username" = ?, "name" = ?, "img_url" = ?, "balance" = ?, "description" = ?, "updated_at" = ? WHERE "customers"."id" = ?[0m  [["username", "stefan.stojanovic"], ["name", "Stefan Stojanovic"], ["img_url", "data:image/jpeg;base64,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"], ["balance", 1000], ["description", "Flatiron"], ["updated_at", "2019-06-17 18:08:43.903287"], ["id", 2]]
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+Redirected to 
+Completed 500 Internal Server Error in 283ms (ActiveRecord: 8.5ms)
+
+
+  
+NoMethodError (undefined method `customer_customer_url' for #<CustomersController:0x00007fa92c8a6bf0>
+Did you mean?  customer_url):
+  
+app/controllers/customers_controller.rb:27:in `update'
+Started PATCH "/customers/1" for ::1 at 2019-06-17 13:09:34 -0500
+Processing by CustomersController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KOBuYjpl7rc3pVA+9dIt4kHxZ9PUd+0ytgI7/8sOXt4Qrzh9B+AHNHrv2oL6QPtnyEgdOnvZvsEcBqiTUafSeA==", "customer"=>{"name"=>"Stefan Stojanovic", "username"=>"stefan.stojanovic", "img_url"=>"data:image/jpeg;base64,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", "balance"=>"1000", "description"=>"Flatiron"}, "commit"=>"Update Customer", "id"=>"1"}
+  [1m[36mCustomer Load (1.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:25
+  [1m[36mCustomer Load (0.8ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 4.4ms)
+
+
+  
+NoMethodError (undefined method `id' for #<Array:0x00007fa929f6c3c0>):
+  
+app/controllers/customers_controller.rb:27:in `update'
+Started PATCH "/customers/1" for ::1 at 2019-06-17 13:10:08 -0500
+Processing by CustomersController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KOBuYjpl7rc3pVA+9dIt4kHxZ9PUd+0ytgI7/8sOXt4Qrzh9B+AHNHrv2oL6QPtnyEgdOnvZvsEcBqiTUafSeA==", "customer"=>{"name"=>"Stefan Stojanovic", "username"=>"stefan.stojanovic", "img_url"=>"data:image/jpeg;base64,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", "balance"=>"1000", "description"=>"Flatiron"}, "commit"=>"Update Customer", "id"=>"1"}
+Started GET "/customers/1/edit" for ::1 at 2019-06-17 13:10:18 -0500
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:25
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 3.9ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/customers_controller.rb:27:in `update'
+Processing by CustomersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:21
+  Rendering customers/edit.erb within layouts/application
+  Rendered customers/edit.erb within layouts/application (11.0ms)
+Completed 200 OK in 98ms (Views: 60.4ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/customers/1" for ::1 at 2019-06-17 13:10:42 -0500
+Processing by CustomersController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dP5/qwcJPZUiI19AJp7LjbaC9YKTOsVKAMzt/hdRyUFMsSm0OozUFm9p1fwpDB0IPzuPazyUlrmqyH6SjfhF5w==", "customer"=>{"name"=>"Stefan Stojanovic", "username"=>"stefan.stojanovic", "img_url"=>"data:image/jpeg;base64,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", "balance"=>"1000", "description"=>"Flatiron"}, "commit"=>"Update Customer", "id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:25
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.1ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/customers_controller.rb:27:in `update'
+Started PATCH "/customers/1" for ::1 at 2019-06-17 13:13:18 -0500
+Processing by CustomersController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dP5/qwcJPZUiI19AJp7LjbaC9YKTOsVKAMzt/hdRyUFMsSm0OozUFm9p1fwpDB0IPzuPazyUlrmqyH6SjfhF5w==", "customer"=>{"name"=>"Stefan Stojanovic", "username"=>"stefan.stojanovic", "img_url"=>"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBAQEBAKEBAJDRYNDQkJDRsICQcWIB0iIiAdHx8kKDQsJCYxJx8fLTstMT01MEMwIytKQD84NzQ5LjUBCgoKDg0NFQ0PFSsZFRkrKzcxNzcrKys1Nys3LTc3KystNC0tKys3NzU3Ny0rMDcrNystLSsrKy0tKysrKy0rK//AABEIAMgAyAMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAgMEBQYHAQj/xAA9EAACAQIEAgcECAYCAwEAAAABAgADEQQSITEFQQYTIlFhcYEHMlKRFCNCcqGx0fAzQ1NiweEk8TRUghX/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAJREAAgICAgIBBQEBAAAAAAAAAAECEQMSITFBUQQTIjJhcbFC/9oADAMBAAIRAxEAPwCzdXDinFgkOFnoWc2ogtOd6uOAkOEi2ChqEnckc9XB1cdicRv1cOqRYJDZIWGoiEhurioSGCQsKEOrnQkXyQFIWOhArAqRxkgywsVCOSDJFsnhBkg2NIQ6qF6uOLQWk2ytUNSkKR+++OHWJsv77oC1ECsSZI5ZIQrKsmhsVhSsc9XCZIWLUbkQRYpBCwokRSigoxVYqonI8jR0JIQFKGFKL2hwsX1ZD1G3VTopeAjkJBlj+oxUN+q8obqxFrTlo92KhLq53q4fNOVKwUEkgAC5JNgI1NhQQoJCcZ6T4TCgh3zPyoUu3U9e6U7pl09YlqOFOVVur4katU+7+szmpimYkkli25PaVfXnIllfgtQ9mkY32kObijh1AGzV3zsPQRLDe0PE3GenhWB5WNNh+Mz6mRve571YII6QqdwxPxWvb1Ez+pL2VqjV+CdOcPXOSqOpYnRy2eg3rylsQhgCpBDahlOZWnnsNT1F7H8G+cm+jnSuvhHABqPTtY4dzdPTulxzNcMlw9G05IVkkVwLpLQxWga1QDWkwyMfKTpSbKdka0NCsKVjpqc51cewUNDThCkdmnCtTi3QajPJClI86uEKROYajNqcEdMkEamLU6MUnfDjGp3zMk4rX7x+kVHEK5+0JG0R8mlDHp3ww4kkzT6ZW+Od+kVfjaTcfQcml/8A6id8IeKp4fOZz1j83b52ilAE7s1/ORaKVmk08ah5j84uGU7H/cz2jUqKR2za/PW0tnCKxI3B/MxqQ/6TBSZz7UukBpgYSmQDWXNXf7SDkPCaRUNlJ7hfuAnmfpPxFq+IrVGJJq1WNzrYX0kykxxQwr1bnT/uJXvzNvPSDCYRqjWF5dOj/R1BYsLn+7W0xlJI3hjcuis4enyCkk87FpJYXhFapslTXYjQTUMBwekAOyunhJfC4JANl9NLTN5jdfG9mYYXohWPvD9TGGP4S9F7MjWXbuE2n6MOQjTiPD0qKQ6qf7vtLJ+q/Jb+Oq4McwWNenUVlNijXUHsk+E3jgmMGIoU6q7VFFxzQ8xMf6U8DNBs63KX0O9pcvZRxQtTq4djc0TnT4gDvOnHO1wceXG12XsrCkRYiFyzS2Y0IETlosRC5YmwSEisTZI5tCsJOzRdDN1gjhlglbkOBkNNTF1WFURVRAYAsMqwwEMBADmWO8IkQMdYIRMBdkk50cTU7yIYSc6NrqYR7CRYeItloVD8NFjfa2hnlnFG7k6kkk33vPT/AEkNsFiSf/Wf8p5kFIl7DmfWKfDKhyT/AEXww3sP8y54SiRa3+5WOCU+rZV3PPxl5wKqBc28+QnHLl2ejiVKh9gidN5LYcHQn/uMMPWpnmt+7MJKUaykAabSDZ0KZjG+JJI84oMUq7kC3foBB9KosLh6Z8Q0Gh2ivdIKAfD1AwvZbjnaVf2YsU4hk1tURltexl+xdEOpFwQRY21yyrdDsCKPFCh3RWKnbNcTbA+aOP5S8o1EiFtDsYWdlM4LCkQhEOYRjE4jTOQhE6TCkxaD2CsIJwmCGgbGTKIsghAIqojEdEOBOAQ4EAOiO8GNY1jvBiTIB0RJ/oytybSHpUC371k9wECmTfn+EUXyOXQ76YkjAYo8xh28tp5z4Ut6p8AbTWPaX0rrCqcHRKimaP1zFRU64nlrytMr4apWsb21FwRsRIyTT4RrjxuNSY/xLVM31bZNNSPeM7TFZhlOIIA3znIp9SY7GELrmXf5icwfR4NcVRVOY3uDe3l3TFNHTrfIlRSpQNxULAanJUzAS9dEca2JtrbLuL6yLrcMzUwmRiKY0euetqH13jroaFpVmW+unhJlT6NccWuxfpfWemcpznTZeyolOw9MOxPXdWVOobEWy/hpNV4twkV99xyOoaVs9FUWr1rI5be6PdKnmI4tLsqcH4GnDMHVVkIr1LrrbMHVx6byZwoy8XonbrKQvbnoZzhfAlptmXrAL36u96a+nKJcTFRMW1amrMcFh1YWOUXubXhCX3WZZMVx1Xk0csO8QpZe+Uypx+pYEgAuoYrvlJESbjVTwncsh5sotOmWDi3Eur2v6SIbjx7mkPieJs+8bvXIF4nJsKLFT4933HnH+F4urm1xKKuIJNu+O1qFSCN4KT8io0HMDqCPKdlHTj7ruNtN94JakhFfWLKI3SOUMgsNDCcX9+MNADvzj3BLGax7gzJl0BK4Y6QHENmtr+k7h9pwjtSIlPopPS1D9JZm/mUwyn4tLSrYO+YlrXBsDzE0npVww1qQZB9ZhzmUblxzEz2vSCkMLg/aA2aZT4Z2QntCvRYOBPcf/XpLng1S2oXb5TN8BWZTpyO3Myz8Oxbne4AmLOjHLiia41ilVcgtmqaDW0j+ilEGqWLqWVrWGkgekrl7NTZgyHbukTwipiadTrAah5ns6GUojc0mbbVNjcWOl8g1YwUq6vtby5iVDhiV61RKvW1UUCxpKAFaPaVU0qxpk3D9pWOgMlqi1yiyso/esg0LmvWUqhpV6a9oCzoRprFTi2DD8ZJ4DCZ3UbBFzuBu/nCPLpEyko/c/BUuLLaowH2bDy0iZXs+nrF+Mn66p975xMe76Ts6PJk7bYwKxSuvZnOcWrDsyiRjhk7UkaiaRphV7UkKi6QYEXXpwRess5EBFoY4SN0jhJYCghpwTogAcR1gzGsc4STICZwu04R2ue8GF2M7mOb9iREpgq8t5D1ui+HrPnPWKCbvRRrUqh/xJqtDUNvWNqwjJroywL1dV1+ByvjoZaMFS6ykrIVBN1N9Mhlb42LYquOa1iR3R5wbHlezfRjexnJJHdjkMsXicRRqlKlLOc1hUB+raTnB8fibG2FoOgGYjNkdhBxK9VQ4Fyo10i3CuKin71K5Ate2olKRuq9kk3GsRh7q2Ep6bJQqZ6jeXzjzNiK+VjQWilsxFZg9YfKL8Lxa1jfqrX1PZyk+cf46sRoNBbaTJ+in/ROgmZqdO5JqMEv9oy40MClFGC5yWGr1DndpX+iGEzu1ZrWo9hBvdjzloxfumdGGCSs8/wCRkbeqMz4uPrn+9CBez6RXi4+tf70SB7PpNDmGhXWK1h2f3aJGL1B2YwGuFXtSSqDQRlhh2tY/qbCJgMK4/OCHrCCNAQSm25/SLqY3WOElAKAw4MIBD2gAdRHGFOvlG6xfDbmTICYwhnTbNzhMIdP3rDMTm5SEUztcw1A6QtU+Ugsb0lSnWXDUwr1WJNQj3MKLfn4SkrJKp0oBGLrffv56CR9OpbUcpK8cwbB+sNytf7e9j3SHN0PhOaSaZ2R5jaLl0ax9N7LUtrob6CWzDcJpDtWX8xMtwtRCb3ynvG0seE41XRSoZGBGhLarJ1No5PDNBwNFBeyqMvO+8YcYxAzBE3b1tKvhOL1trrcn7PaJkvw6izNne9/HnJcfJW+xduiyBaBA/qH10ElMUeyZHcAFqA/udjr5x3iqoCnUTthxFHnZPyZnnF/4z/ehB7vpFOK61X15xMe76QIG0cVB2Y2B1jisezHQCOGPaj+qNBI/CnX96yRqbekKAZVRBDVROx0BXB6xVW8P8WiamKKPP8orAUBhwYmvrFlTz84bewO3jjCn8ojk84Wrj6NAE1XVdNF9529Iu+gJ7CmB2Aa5NgNydFEoXEunLarhlyj+tVGZz5DlKxi+LV6xPWVajX3u3ZlRxhKRc+lvTFVBo4ZgzHR8SuqUfAd5lW6KuTiCTqWQ3Y6k6yFZfG8lOjj5cRT5Zmy5tst5pGPgTNOSgjplcZkqCzDbLILifR1kuwu9P411ZPP9ZYeHNrlO/dJ/C0gdNtLeBhPEpIcMrgZWvDLHbSSPD+GgkA/Iy/4vo8lTVQqOeaj6p/MSFqcJek1mUgrtbUN5TinjlA7ceSM+hXA8PRbWAv37yXpppYDU8hreIYKkzEKqkk8trecs+BwQpDMbM9vf+ynlFjxOb/RWTNHGueyL43xP6FSw4b3Xfq6r/wBEnURoce9QEhlI+JGziM/aUQcFUvujo/l2v9zNaeKcKHpvUR07Jem2Qmeh9FUebu27L1iz2jDKdPSU7D9J6o/ihao5tbq6ss3DeKUa4sjgNbWk/YqCQ8bRVh/nFa/uwhWLOOz/AIkhY3wg7UlHGgkfhxY3MdV8SLeUylligsTqiCMfpwJIggsqFZG0CLaxVSO+KDDi2kg+J8Vp4dsrHM+/VIe0PPunPGTnLgbJ1REMbxWjQHbYX/pp23MpmO6VV3BVQtIHQ5e1UPrIV6jMbsWJPed50RwN/kxWWXifS2q91pWpr3r2qresr9SqzklixJ3LG7GFVYoEnRGKXCATKw1JN/OKBYg1UpowNr/xE7Sjzl1Qg7pDYdypFtwbg8xOlwQLG99iNQYQaH1+cP4Ps2HAVBUWjXG1RFzd/nLB1Rtde7lzlW6C1euwJUWNTh7kdXzr0zrb53lp4bXBFgbjlLozH2HxFl7R0AvcnKFlH6Q+0BHLUcMiVAht9LqaqD/aP8x50zrVqtN6NHMifzH9x8R4Dw/OZRigKLFaiZWYC1TDnID5rt+UEl/0VG+12abwbphVoJnqLh6tPQ1TSX6Pi6F+ZFyCJfsDxKniaS1qLB6dYXVtj5HxmJcMwD4h8OlNlZaqkVWXstSW2oYctJeuE4l8A4Uqfo+iMB7tLx85UoxXCQuXyye6R8OFejVpnXrFX01mN01KsyndCVI8puWMsy3Ugh0BDA3UjlMa47Ty4yuBsz5x4XF4gRF1BY+cKSRYi4I5jQrFaq323/OIgW/e8CiY4d0kq07LU+sQfFpVX1lu4dxWhXFldQ1v4VTsOv6zN2nVPzEzyY9lXQGi4o2Nr2/ORtXEna/+5Wk4xVRSM2cW0Wr2wI5OMzqHGzDb4TPNn8acHyA7q4mxuOcEj2zMNAfOCCgvLAsHE8b9Ho1Kpt9UhIv9o8pk74pmcuxJNRizE7sZeen+Jth0T+tV18gJnyzT4yWuxZLIAwuNxvDBY0wVWxsdm0j0i2ndOwkOsVERB1tOo+tpYhe0KLHxH4NFLRvS7LFe7VfEQAFRQCLDTu5CFaK1RtCgRNAXP2X8U6rFCmTZcWvVdwDbr+P5zTsZwwLmrUyQSMxpfYY98wTA12p1FZTYowYHbKRPQXBscuKwyVV2rpcjkh5j53lLolidWmuIpZrDOq6naYx0xqf8oon8nsuwFyx7prgc0S68mBtMpr0QzPXqC6tUYCnezYxr7eQ5n0lx5F/hZOgFdKdak9UIBjEOHpM2rMbg38uV++aHjcIlRCjKLNvYWImL3qPlKkmoWHVheyEPIAcgJsPBscK9JKgObrU7RGxYaN+Il5VXLFF310OuH4JadHq11Cra538JkXTBMuNYd6C82akuW/jMi9oNO2MDfHTv56zJFIrzsB4eekStuPUd8UqAHfb5iIouU7kjkDrljKE4IHnCdIAcqNofKOej/bUKeQB8Iwd9z+xHHRxvrEX40tMcv4MC94Ph65OU5ExXKLBPDezYFG6d4m5ood1Bcr8MqiyS6R4zrcVVYbK2Re6w0kaJ6mKOsEixxTOokpe4B9DIpRJDDPcEeom6JYak3agrGxvEVbtxXEmVfAUPaD3H7MTxi2s4/l7+I5xDCVY/3HmLecfgQi5uBb5986giFDskofse7zuOUdLGgEauhBmq+yXiRanWw5P8O1amvMA6N/iZXiBpLF7O+J9RjKJJstVupqX0ADafnaNCZrHSCn2SRva8yGvVL2v9m6qo0VBc7CbRxqn9WfIjymRYQCkvWsAXLv8AR6TdpfePbPgOXefKa4nz+yHG1y+BxlFCmV/n117XfgkPL7x/AectXszxRy1aJ2psKidyg6EfhKThqb1XAFy9RiWZz6kk/iTLR0VxirilpUz9X1TAP7rYl9Dm/DTwms48Uu/Ik7+59eDSL7jumU+0j+PS+6wmpq2x+KZX7Sj/AMimPAmc1Foq7GFO8BM4TGUJsIk50iwMbYk6GJgN6p7J8opw6pkrUj8DLG9Y6W+IgTjPZ7/C0zlygL6cUG07vxgiC8PcsGF7MAYJ4spQTqwMtYnnvvfmYFMEE9UsdUjeOsObHw5zkE0iJiVRrP6xzWOkEEQkJ0GtJOk8EEuImJYpNnA7Sd32xzEVoEEDx1v3wQQ8gdqCI4aoVYWNtd+6CCPyBvnC+IDF4ClW0JenlqW+yw0P6+syStdqjjtEiqyDmTrYCCCb4XVsyatpDurVFFWoi3WP/wCRUXtBP7B/n5co+6KUz9JpPcKtNwpZtA5IICjxM5BNZOsa9sqK2yO/BqWCe6fdMzD2kt/yaf3D+cEE5gKpmgYwQQLEiYhiX0ggktgM3a5UeN4TNr6zsEmXQ0jU8DiR1NM99JT4nSCCCfNzX3MTP//Z", "balance"=>"1000", "description"=>"Flatiron"}, "commit"=>"Update Customer", "id"=>"1"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:25
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+Redirected to 
+Completed 500 Internal Server Error in 358ms (ActiveRecord: 1.7ms)
+
+
+  
+NoMethodError (undefined method `customer_customer_url' for #<CustomersController:0x00007fa92f396ec8>
+Did you mean?  customer_url):
+  
+app/controllers/customers_controller.rb:27:in `update'
+Started PATCH "/customers/1" for ::1 at 2019-06-17 13:13:31 -0500
+Processing by CustomersController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dP5/qwcJPZUiI19AJp7LjbaC9YKTOsVKAMzt/hdRyUFMsSm0OozUFm9p1fwpDB0IPzuPazyUlrmqyH6SjfhF5w==", "customer"=>{"name"=>"Stefan Stojanovic", "username"=>"stefan.stojanovic", "img_url"=>"data:image/jpeg;base64,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", "balance"=>"1000", "description"=>"Flatiron"}, "commit"=>"Update Customer", "id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:25
+  [1m[36mCustomer Load (0.7ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+Redirected to http://localhost:3000/customers/1
+Completed 200 OK in 54ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/customers/1" for ::1 at 2019-06-17 13:13:31 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:17
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:18
+  Rendered customers/show.erb within layouts/application (20.7ms)
+Completed 200 OK in 90ms (Views: 85.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/customers/1/edit" for ::1 at 2019-06-17 13:13:34 -0500
+Processing by CustomersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:21
+  Rendering customers/edit.erb within layouts/application
+  Rendered customers/edit.erb within layouts/application (11.4ms)
+Completed 200 OK in 59ms (Views: 54.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/customers/1" for ::1 at 2019-06-17 13:13:38 -0500
+Processing by CustomersController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mQnE54PTqNNsqPd8NQ1KbBR+pzTJE+cPX41nq6/74cjr3F8GJ2P7jYD+KWfWzOT+maVxwDkofCDDi8bF2ot9KQ==", "customer"=>{"name"=>"Stefan Stojanovic", "username"=>"stefan.stojanovic", "img_url"=>"data:image/jpeg;base64,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", "balance"=>"1000", "description"=>"Flatiron Student"}, "commit"=>"Update Customer", "id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:25
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[36mCustomer Update (0.9ms)[0m  [1m[33mUPDATE "customers" SET "description" = ?, "updated_at" = ? WHERE "customers"."id" = ?[0m  [["description", "Flatiron Student"], ["updated_at", "2019-06-17 18:13:38.190316"], ["id", 1]]
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[36mCustomer Update (0.8ms)[0m  [1m[33mUPDATE "customers" SET "description" = ?, "updated_at" = ? WHERE "customers"."id" = ?[0m  [["description", "Flatiron Student"], ["updated_at", "2019-06-17 18:13:38.196146"], ["id", 2]]
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+Redirected to http://localhost:3000/customers/1
+Completed 200 OK in 19ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/customers/1" for ::1 at 2019-06-17 13:13:38 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.9ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:17
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:18
+  Rendered customers/show.erb within layouts/application (10.0ms)
+Completed 200 OK in 52ms (Views: 46.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/customers" for ::1 at 2019-06-17 13:13:46 -0500
+Processing by CustomersController#index as HTML
+  Rendering customers/index.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.erb:11
+  Rendered customers/index.erb within layouts/application (4.0ms)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/customers/2" for ::1 at 2019-06-17 13:13:50 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:10
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:17
+  Rendered customers/show.erb within layouts/application (6.7ms)
+Completed 200 OK in 45ms (Views: 40.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/customers/2/edit" for ::1 at 2019-06-17 13:13:56 -0500
+Processing by CustomersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:21
+  Rendering customers/edit.erb within layouts/application
+  Rendered customers/edit.erb within layouts/application (5.6ms)
+Completed 200 OK in 46ms (Views: 41.9ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/customers/2" for ::1 at 2019-06-17 13:14:13 -0500
+Processing by CustomersController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1yuIVtikRofJ7BH5SoTY7UFngoWzu7XP5CqyRoS/Ka9BAN6jJudjWYWS8V2ka1XKv/WZVt/KL3B2grHYZpiPZA==", "customer"=>{"name"=>"Kurtis Leach", "username"=>"kurtis.leach", "img_url"=>"", "balance"=>"50", "description"=>"Flatiron Student, future game designer"}, "commit"=>"Update Customer", "id"=>"2"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:25
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[36mCustomer Update (0.7ms)[0m  [1m[33mUPDATE "customers" SET "username" = ?, "name" = ?, "img_url" = ?, "balance" = ?, "description" = ?, "updated_at" = ? WHERE "customers"."id" = ?[0m  [["username", "kurtis.leach"], ["name", "Kurtis Leach"], ["img_url", ""], ["balance", 50], ["description", "Flatiron Student, future game designer"], ["updated_at", "2019-06-17 18:14:13.196740"], ["id", 1]]
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[36mCustomer Update (0.8ms)[0m  [1m[33mUPDATE "customers" SET "username" = ?, "name" = ?, "img_url" = ?, "balance" = ?, "description" = ?, "updated_at" = ? WHERE "customers"."id" = ?[0m  [["username", "kurtis.leach"], ["name", "Kurtis Leach"], ["img_url", ""], ["balance", 50], ["description", "Flatiron Student, future game designer"], ["updated_at", "2019-06-17 18:14:13.203961"], ["id", 2]]
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+Redirected to http://localhost:3000/customers/2
+Completed 200 OK in 22ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/customers/2" for ::1 at 2019-06-17 13:14:13 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCustomer Load (1.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:10
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:17
+  Rendered customers/show.erb within layouts/application (10.2ms)
+Completed 200 OK in 86ms (Views: 76.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/customers" for ::1 at 2019-06-17 13:14:15 -0500
+Processing by CustomersController#index as HTML
+  Rendering customers/index.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.erb:11
+  Rendered customers/index.erb within layouts/application (4.6ms)
+Completed 200 OK in 42ms (Views: 35.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/customers/1" for ::1 at 2019-06-17 13:15:36 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironstudentaccount/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (1.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.7ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:17
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:18
+  Rendered customers/show.erb within layouts/application (8.1ms)
+Completed 200 OK in 544ms (Views: 503.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/customers/1/edit" for ::1 at 2019-06-17 13:16:09 -0500
+Processing by CustomersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:21
+  Rendering customers/edit.erb within layouts/application
+  Rendered customers/edit.erb within layouts/application (303.9ms)
+Completed 200 OK in 334ms (Views: 329.1ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/customers/1" for ::1 at 2019-06-17 13:16:28 -0500
+Processing by CustomersController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u8D+oiq6lz/Eea5UXT9N6FDlf3u7V/QCseZ5Jlg3IbPJFWVDjgrEYSgvcE++/uN63T6pj0tsby0t4NhILUe9Ug==", "customer"=>{"name"=>"Stefan Stojanovic", "username"=>"stefan.stojanovic", "img_url"=>"data:image/jpeg;base64,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", "balance"=>"1000", "description"=>"Flatiron Student"}, "commit"=>"Update Customer", "id"=>"1"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[36mCustomer Update (1.4ms)[0m  [1m[33mUPDATE "customers" SET "username" = ?, "name" = ?, "img_url" = ?, "balance" = ?, "description" = ?, "updated_at" = ? WHERE "customers"."id" = ?[0m  [["username", "stefan.stojanovic"], ["name", "Stefan Stojanovic"], ["img_url", "data:image/jpeg;base64,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"], ["balance", 1000], ["description", "Flatiron Student"], ["updated_at", "2019-06-17 18:16:28.978447"], ["id", 1]]
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+Redirected to http://localhost:3000/customers/1
+Completed 200 OK in 13ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/customers/1" for ::1 at 2019-06-17 13:16:28 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (2.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:17
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:18
+  Rendered customers/show.erb within layouts/application (5.9ms)
+Completed 200 OK in 36ms (Views: 29.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/customers" for ::1 at 2019-06-17 13:16:34 -0500
+Processing by CustomersController#index as HTML
+  Rendering customers/index.erb within layouts/application
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.erb:11
+  Rendered customers/index.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/customers" for ::1 at 2019-06-17 13:35:41 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/flatironstudentaccount/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by CustomersController#index as HTML
+  Rendering customers/index.erb within layouts/application
+  [1m[36mCustomer Load (1.6ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.erb:11
+  Rendered customers/index.erb within layouts/application (18.0ms)
+Completed 200 OK in 396ms (Views: 368.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/customers/1" for ::1 at 2019-06-17 13:35:43 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:17
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:18
+  Rendered customers/show.erb within layouts/application (5.5ms)
+Completed 200 OK in 37ms (Views: 28.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/customers/2" for ::1 at 2019-06-17 13:35:45 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCustomer Load (0.1ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:10
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:17
+  Rendered customers/show.erb within layouts/application (4.3ms)
+Completed 200 OK in 30ms (Views: 27.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/customers/1" for ::1 at 2019-06-17 13:35:46 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:17
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:18
+  Rendered customers/show.erb within layouts/application (8.0ms)
+Completed 200 OK in 48ms (Views: 42.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/customers/2" for ::1 at 2019-06-17 13:35:47 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:10
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:17
+  Rendered customers/show.erb within layouts/application (6.8ms)
+Completed 200 OK in 42ms (Views: 37.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/customers/1" for ::1 at 2019-06-17 13:35:48 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:17
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:18
+  Rendered customers/show.erb within layouts/application (10.4ms)
+Completed 200 OK in 52ms (Views: 47.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/customers/1/edit" for ::1 at 2019-06-17 13:35:49 -0500
+Processing by CustomersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:21
+  Rendering customers/edit.erb within layouts/application
+  Rendered customers/edit.erb within layouts/application (284.1ms)
+Completed 200 OK in 315ms (Views: 312.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/customers/1" for ::1 at 2019-06-17 13:35:53 -0500
+Processing by CustomersController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aBenp59o74bNl819m2qDOK1t3PBwOW8L+ggxyZKrXFgawjxGO9i82CHBE2Z4qy2qILYKBIAC9CRmDpCn59vAuQ==", "customer"=>{"name"=>"Stefan Stojanovic", "username"=>"stefan.stojanovic", "img_url"=>"data:image/jpeg;base64,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", "balance"=>"1000", "description"=>"Flatiron"}, "commit"=>"Update Customer", "id"=>"1"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[36mCustomer Update (1.0ms)[0m  [1m[33mUPDATE "customers" SET "description" = ?, "updated_at" = ? WHERE "customers"."id" = ?[0m  [["description", "Flatiron"], ["updated_at", "2019-06-17 18:35:53.687180"], ["id", 1]]
+  ↳ app/controllers/customers_controller.rb:26
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/customers_controller.rb:26
+Redirected to http://localhost:3000/customers/1
+Completed 200 OK in 10ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/customers/1" for ::1 at 2019-06-17 13:35:53 -0500
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:17
+  Rendering customers/show.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:9
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:17
+  [1m[36mCACHE Customer Load (0.0ms)[0m  [1m[34mSELECT  "customers".* FROM "customers" ORDER BY "customers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/customer.rb:18
+  Rendered customers/show.erb within layouts/application (7.3ms)
+Completed 200 OK in 39ms (Views: 33.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/customers" for ::1 at 2019-06-17 13:35:55 -0500
+Processing by CustomersController#index as HTML
+  Rendering customers/index.erb within layouts/application
+  [1m[36mCustomer Load (0.2ms)[0m  [1m[34mSELECT "customers".* FROM "customers"[0m
+  ↳ app/views/customers/index.erb:11
+  Rendered customers/index.erb within layouts/application (2.6ms)
+Completed 200 OK in 34ms (Views: 29.0ms | ActiveRecord: 0.2ms)
+
+

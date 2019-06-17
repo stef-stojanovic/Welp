@@ -22,7 +22,7 @@ class ReviewsController < ApplicationController
     
     def update
         review = Review.find(params[:id])
-        review = Review.update(permit_params)
+        review.update(permit_params)
         redirect_to review
     end
     

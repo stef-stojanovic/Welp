@@ -22,7 +22,7 @@ class FoodsController < ApplicationController
     
     def update
         food = Food.find(params[:id])
-        food = Food.update(permit_params)
+        food.update(permit_params)
         redirect_to food
     end
     
