@@ -1,0 +1,16 @@
+<h1><%=@review.restaurant.name%></h1>
+<h3><%=@review.customer.name%></h3>
+<ul>
+    <li>
+       <%=@review.subject%>
+    </li>
+    <li>
+       <%=@review.content%>
+    </li>
+    <li>
+       <%=@review.rating%>
+    </li>
+</ul>
+<%=link_to "Edit", edit_review_path(@review.id)%>
+<%=link_to "Delete", review_path(@review.id), method: "DELETE"%>
+<%=link_to "Home", reviews_path%>

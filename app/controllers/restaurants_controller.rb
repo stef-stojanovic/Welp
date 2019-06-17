@@ -14,6 +14,7 @@ class RestaurantsController < ApplicationController
 
     def show
         @restaurant = Restaurant.find(params[:id])
+        flash.keep[:restaurant_id] = params[:id]
     end
 
     def edit
@@ -42,6 +43,7 @@ class RestaurantsController < ApplicationController
         else next_id = self.id + 1
         end
     end
+    
     def back_id
         if (self.id - 1 == Restaurant.first.id - 1) 
             back_id = Restaurant.last.id
