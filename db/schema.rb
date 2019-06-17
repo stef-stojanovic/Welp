@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(version: 2019_06_14_213000) do
     t.string "phone_number"
     t.integer "rating"
     t.string "description"
+    t.string "restaurant_type"
     t.text "img_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
