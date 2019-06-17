@@ -1,0 +1,40 @@
+<style> table, th, td {
+    border: 1px solid;
+}
+    table {
+        height: 100px
+    }
+    .image_cap{
+        max-height:300px;
+        width: 100%;
+    }
+    
+</style>
+<h1>Foods</h1>
+
+<table>
+    <thead>
+        <tr>
+        <th>Food</th>
+        <th>Restaurant</th>
+        <th>Price</th>
+        <th>Details</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <% @foods.each do |food| %>
+        <tr>
+            <td><%= food.name %></td>
+            <td><%= food.restaurant.name %></td>
+            <td><%= food.price %></td>
+            <td><%= link_to "Show", food_path(food.id) %>
+            </tr>
+            <% end %>
+    </tbody>
+</table>
+<%= link_to "Restaurants", restaurants_path %><br>
+<%= link_to "Customers", customers_path %><br>
+<%= link_to "Add an Order", new_order_path %><br>
+<%= link_to "Add Food", new_food_path %>
+</body>

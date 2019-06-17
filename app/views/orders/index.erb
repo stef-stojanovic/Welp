@@ -1,0 +1,41 @@
+<style> table, th, td {
+    border: 1px solid;
+}
+    table {
+        height: 100px
+    }
+    .image_cap{
+        max-height:300px;
+        width: 100%;
+    }
+    
+</style>
+<h1>Orders</h1>
+
+<table>
+    <thead>
+        <tr>
+        <th>Order #</th>
+        <th>Restaurant</th>
+        <th>Customer</th>
+        <th>Price</th>
+        <th>Details</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <% @orders.each do |order| %>
+        <tr>
+            <td><%= order.id %></td>
+            <td><%= order.restaurant.name %></td>
+            <td><%= order.customer.name %></td>
+            <td><%= order.price %></td>
+            <td><%= link_to "Show", order_path(order.id) %>
+            </tr>
+            <% end %>
+    </tbody>
+</table>
+<%= link_to "Restaurants", restaurants_path %><br>
+<%= link_to "Customers", customers_path %><br>
+<%= link_to "Add an Order", new_order_path %>
+</body>

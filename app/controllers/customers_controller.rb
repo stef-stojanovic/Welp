@@ -34,7 +34,22 @@ class CustomersController < ApplicationController
     end
 
     def permit_params
-        params.require(:customer).permit(:username, :password_digest, :name, :img_url, :balance, :description)
+        params.require(:customer).permit(:username, :password, :name, :img_url, :balance, :description)
     end
+
+    def login_form
+
+    end
+
+    def authenticate
+        customer = Customer.find_by(username:(params[:username]))
+        if customer != nil && customer.authenticate(params[:password])
+            session[:customer_id] = customer.id
+            redirect_to customer_path(session[:customer_id])
+        else
+            #error
+        end
+    end
+
 end
 

@@ -14,4 +14,7 @@
     address = Faker::Address.street_address
     phone_number = Faker::PhoneNumber.cell_phone
     Restaurant.create(name: name, restaurant_type: type, description: description, street_address: address, zip: zip, phone_number: phone_number)
+
 end
+
+stefan = Customer.create(name: "Stefan Stojanovic", username: "stefan.stojanovic", password: "1234", description: "Flatiron")
