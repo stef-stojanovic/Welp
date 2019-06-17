@@ -5,6 +5,7 @@ class CustomersController < ApplicationController
     end
 
     def new
+        @customer = Customer.new()
     end
 
     def create
@@ -22,8 +23,8 @@ class CustomersController < ApplicationController
     
     def update
         customer = Customer.find(params[:id])
-        customer = Customer.update(permit_params)
-        redirect_to customer
+        customer.update(permit_params)
+        redirect_to customer_path
     end
     
     def destroy

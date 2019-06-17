@@ -1,0 +1,25 @@
+<h1><%=@restaurant.name%></h1>
+<ul>
+    <li>
+       <%=@restaurant.restaurant_type%>
+    </li>
+    <li>
+       <%=@restaurant.phone_number%>
+    </li>
+    <li>
+       <%=@restaurant.street_address%>
+    </li>
+    <li>
+       <%=@restaurant.zip%>
+    </li>
+    <li>
+       <%=@restaurant.rating%>
+    </li>
+    <li>
+       <%=@restaurant.description%>
+    </li>
+    <li>
+       <%=@restaurant.img_url%>
+    </li>
+</ul>
+<%=link_to "Edit", edit_restaurant_path(@restaurant.id)%>

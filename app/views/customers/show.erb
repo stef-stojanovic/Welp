@@ -1,0 +1,44 @@
+<style> table, th, td {
+    border: 1px solid;
+}
+    table {
+        height: 100px
+    }
+    .image_cap{
+        max-height:300px;
+        width: 100%;
+    }
+    
+</style>
+
+<h1> Customer <%@customer.name%></h1>
+
+<table>
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Username</th>
+        <th>password</th>
+        <th>Balance</th>
+        <th>Description</th>
+        <th>Image_URL</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><%= @customer.name %></td>
+            <td><%= @customer.username %></td>
+            <td><%= @customer.password_digest %></td>
+            <td><%= @customer.balance %></td>
+            <td><%= @customer.description %></td>
+            <td><img class= 'image_cap' src="<%= @customer.img_url %>" alt="<%=@customer.name %>" /> </td>
+            </tr>
+    </tbody>
+</table>
+<%=link_to "Edit", edit_customer_path(@customer.id)%><br>
+<%=link_to "Next", customer_path(@customer.increment)%><br>
+<%=link_to "Back", customer_path(@customer.decrement)%><br>
+<%=link_to "All Employees", customers_path%><br>
+<%=link_to "Delete", customer_path(@customer.id), method: "DELETE"%>
+</body>
