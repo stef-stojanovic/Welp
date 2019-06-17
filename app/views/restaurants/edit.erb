@@ -1,6 +1,20 @@
+<h1><%=@restaurant.name%></h1>
 <%=form_with model: @restaurant do |f|%>
     <%=f.label :username%>
-    <%=f.text_field :username%>
-    <%=f.label :username%>
-    <%=f.text_field :username%>
+    <%=f.text_field :username%><br>
+    <%=f.label :name%>
+    <%=f.text_field :name%><br>
+    <%=f.label :type%>
+    <%=f.text_field :type%><br>
+    <%=f.label :street_Address%>
+    <%=f.text_field :street_address%><br>
+    <%=f.label :zip%>
+    <%=f.text_field :zip%><br>
+    <%=f.label :phone_number%>
+    <%=f.telephone_field :phone_number%><br>
+    <%=f.label :description%>
+    <%=f.text_area :description%><br>
+    <%=f.label :image_Url%>
+    <%=f.url_field :img_url%><br>
+    <%=f.submit%>
 <%end%>

@@ -820,3 +820,1195 @@ Processing by RestaurantsController#edit as HTML
 Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/restaurants/2/edit" for ::1 at 2019-06-17 10:51:46 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kurtisleach/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/edit.erb within layouts/application
+  Rendered restaurants/edit.erb within layouts/application (155.9ms)
+Completed 200 OK in 303ms (Views: 280.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurants/2/edit" for ::1 at 2019-06-17 10:54:03 -0500
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/edit.erb within layouts/application
+  Rendered restaurants/edit.erb within layouts/application (1.8ms)
+Completed 200 OK in 28ms (Views: 13.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurants/2/edit" for ::1 at 2019-06-17 10:54:40 -0500
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/edit.erb within layouts/application
+  Rendered restaurants/edit.erb within layouts/application (1.9ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/restaurants/2/edit" for ::1 at 2019-06-17 10:55:51 -0500
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/edit.erb within layouts/application
+  Rendered restaurants/edit.erb within layouts/application (2.1ms)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants/2/edit" for ::1 at 2019-06-17 10:55:59 -0500
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/edit.erb within layouts/application
+  Rendered restaurants/edit.erb within layouts/application (2.7ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/restaurants/2/edit" for ::1 at 2019-06-17 10:57:45 -0500
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/edit.erb within layouts/application
+  Rendered restaurants/edit.erb within layouts/application (12.2ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/restaurants/2/edit" for ::1 at 2019-06-17 11:00:39 -0500
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/edit.erb within layouts/application
+  Rendered restaurants/edit.erb within layouts/application (3.4ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/restaurants/2/edit" for ::1 at 2019-06-17 11:00:54 -0500
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/edit.erb within layouts/application
+  Rendered restaurants/edit.erb within layouts/application (3.0ms)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/restaurants/2/edit" for ::1 at 2019-06-17 11:01:30 -0500
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/edit.erb within layouts/application
+  Rendered restaurants/edit.erb within layouts/application (3.4ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-06-17 11:01:37 -0500
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.erb:3
+  Rendered restaurants/index.erb within layouts/application (2.3ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurants/10" for ::1 at 2019-06-17 11:03:25 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/restaurants/10/edit" for ::1 at 2019-06-17 11:03:34 -0500
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/edit.erb within layouts/application
+  Rendered restaurants/edit.erb within layouts/application (5.1ms)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurants/10/edit" for ::1 at 2019-06-17 11:06:56 -0500
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/edit.erb within layouts/application
+  Rendered restaurants/edit.erb within layouts/application (3.6ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/restaurants/new" for ::1 at 2019-06-17 11:06:59 -0500
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.erb within layouts/application
+  Rendered restaurants/new.erb within layouts/application (13.1ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurants/new" for ::1 at 2019-06-17 11:07:09 -0500
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.erb within layouts/application
+  Rendered restaurants/new.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    3:     <%=f.label :username%>
+    4:     <%=f.text_field :username%><br>
+    5:     <%=f.label :password%>
+    6:     <%=f.password_field :password_digest%><h1><%=@restaurant.name%></h1>
+    7: <%=form_with model: @restaurant do |f|%>
+    8:     <%=f.label :username%>
+    9:     <%=f.text_field :username%><br>
+  
+app/views/restaurants/new.erb:6:in `block in _app_views_restaurants_new_erb___2024857346352537103_70337239791420'
+app/views/restaurants/new.erb:2:in `_app_views_restaurants_new_erb___2024857346352537103_70337239791420'
+Started GET "/restaurants/new" for ::1 at 2019-06-17 11:07:31 -0500
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.erb within layouts/application
+  Rendered restaurants/new.erb within layouts/application (4.1ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurants/new" for ::1 at 2019-06-17 11:14:00 -0500
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.erb within layouts/application
+  Rendered restaurants/new.erb within layouts/application (12.1ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurants/new" for ::1 at 2019-06-17 11:15:30 -0500
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.erb within layouts/application
+  Rendered restaurants/new.erb within layouts/application (3.6ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-06-17 11:18:14 -0500
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.erb:3
+  Rendered restaurants/index.erb within layouts/application (2.4ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants/new" for ::1 at 2019-06-17 11:18:27 -0500
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.erb within layouts/application
+  Rendered restaurants/new.erb within layouts/application (14.2ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2019-06-17 11:18:31 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants/1/edit" for ::1 at 2019-06-17 11:18:32 -0500
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/edit.erb within layouts/application
+  Rendered restaurants/edit.erb within layouts/application (4.7ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/restaurants/new" for ::1 at 2019-06-17 11:21:47 -0500
+Processing by RestaurantsController#new as HTML
+  Rendering restaurants/new.erb within layouts/application
+  Rendered restaurants/new.erb within layouts/application (4.8ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurants" for ::1 at 2019-06-17 11:22:03 -0500
+Processing by RestaurantsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MAQKqeQeZHgMD3RHci68eWNTvj+7ueBPs4hv135mcMC6fo8/HtU4gUA8AP4Q0gOEsp2V0b4FMyO4zCHyqiKXkA==", "restaurant"=>{"username"=>"", "password"=>"[FILTERED]", "name"=>"re", "type"=>"re", "street_address"=>"re", "zip"=>"re", "phone_number"=>"re", "description"=>"re", "img_url"=>""}, "commit"=>"Create Restaurant"}
+Unpermitted parameters: :password, :type
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/restaurants_controller.rb:11
+  [1m[36mRestaurant Create (0.4ms)[0m  [1m[32mINSERT INTO "restaurants" ("username", "name", "street_address", "zip", "phone_number", "description", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["username", ""], ["name", "re"], ["street_address", "re"], ["zip", 0], ["phone_number", "re"], ["description", "re"], ["img_url", ""], ["created_at", "2019-06-17 16:22:03.368406"], ["updated_at", "2019-06-17 16:22:03.368406"]]
+  ↳ app/controllers/restaurants_controller.rb:11
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/restaurants_controller.rb:11
+Redirected to http://localhost:3000/restaurants/11
+Completed 200 OK in 5ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/restaurants/11" for ::1 at 2019-06-17 11:22:03 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (0.7ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/restaurants/11" for ::1 at 2019-06-17 11:22:48 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (0.7ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-06-17 11:22:49 -0500
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.erb:3
+  Rendered restaurants/index.erb within layouts/application (2.5ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants/2" for ::1 at 2019-06-17 11:31:25 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 14.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants/2" for ::1 at 2019-06-17 11:36:48 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants/3" for ::1 at 2019-06-17 11:36:50 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (1.1ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/restaurants/3" for ::1 at 2019-06-17 11:37:02 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (0.7ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/restaurants/3" for ::1 at 2019-06-17 11:37:12 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (1.8ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/restaurants/2" for ::1 at 2019-06-17 11:37:24 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (1.4ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2019-06-17 11:37:25 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (1.3ms)
+Completed 200 OK in 22ms (Views: 18.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/restaurants/0" for ::1 at 2019-06-17 11:37:26 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"0"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Restaurant with 'id'=0):
+  
+app/controllers/restaurants_controller.rb:16:in `show'
+Started GET "/restaurants/1" for ::1 at 2019-06-17 11:37:28 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (0.8ms)
+Completed 200 OK in 55ms (Views: 9.0ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/restaurants" for ::1 at 2019-06-17 11:44:14 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kurtisleach/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.erb:3
+  Rendered restaurants/index.erb within layouts/application (13.8ms)
+Completed 200 OK in 188ms (Views: 176.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/restaurants/11" for ::1 at 2019-06-17 11:44:17 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:25
+  Rendered restaurants/show.erb within layouts/application (2.0ms)
+Completed 200 OK in 18ms (Views: 13.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/11" for ::1 at 2019-06-17 11:44:31 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:25
+  Rendered restaurants/show.erb within layouts/application (1.5ms)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants/12" for ::1 at 2019-06-17 11:44:32 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Restaurant with 'id'=12):
+  
+app/controllers/restaurants_controller.rb:16:in `show'
+Started GET "/restaurants/12" for ::1 at 2019-06-17 11:44:59 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Restaurant with 'id'=12):
+  
+app/controllers/restaurants_controller.rb:16:in `show'
+Started GET "/restaurants/12" for ::1 at 2019-06-17 11:45:00 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Restaurant with 'id'=12):
+  
+app/controllers/restaurants_controller.rb:16:in `show'
+Started GET "/restaurants/11" for ::1 at 2019-06-17 11:45:03 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:25
+  Rendered restaurants/show.erb within layouts/application (176.7ms)
+Completed 500 Internal Server Error in 181ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `restaurant' for #<#<Class:0x00007ffbf4fcebb0>:0x00007ffbf9880bd8>
+Did you mean?  @restaurant):
+    23:     </li>
+    24: </ul>
+    25: <%if (@restaurant.id + 1 == Restaurant.last.id + 1) %>
+    26:     <%id =  restaurant.first.id%>
+    27: <%else id = @restaurant.id + 1%>
+    28: <%end%>
+    29: <%=link_to "Next", restaurant_path(id)%>
+  
+app/views/restaurants/show.erb:26:in `_app_views_restaurants_show_erb__3985986866869953197_70360099981840'
+Started GET "/restaurants/11" for ::1 at 2019-06-17 11:45:12 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:25
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:26
+  Rendered restaurants/show.erb within layouts/application (3.9ms)
+Completed 200 OK in 49ms (Views: 45.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2019-06-17 11:45:14 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:25
+  Rendered restaurants/show.erb within layouts/application (1.9ms)
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurants/0" for ::1 at 2019-06-17 11:45:16 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"0"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Restaurant with 'id'=0):
+  
+app/controllers/restaurants_controller.rb:16:in `show'
+Started GET "/restaurants/11" for ::1 at 2019-06-17 11:45:22 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:25
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:26
+  Rendered restaurants/show.erb within layouts/application (2.4ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2019-06-17 11:45:24 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:25
+  Rendered restaurants/show.erb within layouts/application (2.9ms)
+Completed 200 OK in 25ms (Views: 21.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2019-06-17 11:47:21 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:25
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:29
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:30
+  Rendered restaurants/show.erb within layouts/application (4.0ms)
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/11" for ::1 at 2019-06-17 11:47:23 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:25
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:26
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:29
+  Rendered restaurants/show.erb within layouts/application (4.2ms)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurants/12" for ::1 at 2019-06-17 11:47:25 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Restaurant with 'id'=12):
+  
+app/controllers/restaurants_controller.rb:16:in `show'
+Started GET "/restaurants/11" for ::1 at 2019-06-17 11:47:29 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:25
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:26
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:29
+  Rendered restaurants/show.erb within layouts/application (3.3ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2019-06-17 11:47:31 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:25
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:29
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:30
+  Rendered restaurants/show.erb within layouts/application (3.8ms)
+Completed 200 OK in 20ms (Views: 16.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/11" for ::1 at 2019-06-17 11:47:33 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:25
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:26
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:29
+  Rendered restaurants/show.erb within layouts/application (3.9ms)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/12" for ::1 at 2019-06-17 11:47:43 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Restaurant with 'id'=12):
+  
+app/controllers/restaurants_controller.rb:16:in `show'
+Started GET "/restaurants/11" for ::1 at 2019-06-17 11:47:45 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:25
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:26
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:29
+  Rendered restaurants/show.erb within layouts/application (2.6ms)
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/11" for ::1 at 2019-06-17 11:47:46 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:25
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:26
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:29
+  Rendered restaurants/show.erb within layouts/application (2.2ms)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurants/10" for ::1 at 2019-06-17 11:47:47 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:25
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:29
+  Rendered restaurants/show.erb within layouts/application (2.9ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/9" for ::1 at 2019-06-17 11:47:48 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:25
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:29
+  Rendered restaurants/show.erb within layouts/application (3.1ms)
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/10" for ::1 at 2019-06-17 11:47:48 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:25
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:29
+  Rendered restaurants/show.erb within layouts/application (3.6ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/11" for ::1 at 2019-06-17 11:47:49 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:25
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:26
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:29
+  Rendered restaurants/show.erb within layouts/application (3.7ms)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2019-06-17 11:47:49 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:25
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:29
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/restaurants/show.erb:30
+  Rendered restaurants/show.erb within layouts/application (4.2ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2019-06-17 13:10:10 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `next_id' for #<Restaurant:0x00007ffbf998a3d0>):
+    22:        <%=@restaurant.img_url%>
+    23:     </li>
+    24: </ul>
+    25: <%=link_to "Next", restaurant_path(@restaurant.next_id)%>
+    26: <%=link_to "Back", restaurant_path(@restaurant.back_id)%>
+    27: <%=link_to "Edit", edit_restaurant_path(@restaurant.id)%>
+    28: <%=link_to "Home", restaurants_path%>
+  
+app/views/restaurants/show.erb:25:in `_app_views_restaurants_show_erb__3985986866869953197_70360100522400'
+Started GET "/restaurants/1" for ::1 at 2019-06-17 13:10:10 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `next_id' for #<Restaurant:0x00007ffbf35d3490>):
+    22:        <%=@restaurant.img_url%>
+    23:     </li>
+    24: </ul>
+    25: <%=link_to "Next", restaurant_path(@restaurant.next_id)%>
+    26: <%=link_to "Back", restaurant_path(@restaurant.back_id)%>
+    27: <%=link_to "Edit", edit_restaurant_path(@restaurant.id)%>
+    28: <%=link_to "Home", restaurants_path%>
+  
+app/views/restaurants/show.erb:25:in `_app_views_restaurants_show_erb__3985986866869953197_70360048243220'
+Started GET "/restaurants/1" for ::1 at 2019-06-17 13:10:50 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (199.2ms)
+Completed 500 Internal Server Error in 203ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `next_id' for #<#<Class:0x00007ffbf9988be8>:0x00007ffbf3771b08>
+Did you mean?  next):
+    22:        <%=@restaurant.img_url%>
+    23:     </li>
+    24: </ul>
+    25: <%=link_to "Next", restaurant_path(next_id)%>
+    26: <%=link_to "Back", restaurant_path(back_id)%>
+    27: <%=link_to "Edit", edit_restaurant_path(@restaurant.id)%>
+    28: <%=link_to "Home", restaurants_path%>
+  
+app/views/restaurants/show.erb:25:in `_app_views_restaurants_show_erb__3985986866869953197_70360049095080'
+Started GET "/restaurants/1" for ::1 at 2019-06-17 13:11:03 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  Rendered restaurants/show.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/kurtisleach/Desktop/CODE/RUBY/Mod-2-Flatiron/Welp/app/views/restaurants/show.erb:25: void value expression
+...to "Next", restaurant_path(next));@output_buffer.safe_append...
+...                           ^~~~):
+  
+app/views/restaurants/show.erb:25: void value expression
+Started GET "/restaurants/1" for ::1 at 2019-06-17 13:11:37 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:16
+  Rendered restaurants/show.erb within layouts/application (2.5ms)
+Completed 200 OK in 30ms (Views: 13.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/restaurants/2" for ::1 at 2019-06-17 13:11:39 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  Rendered restaurants/show.erb within layouts/application (2.9ms)
+Completed 200 OK in 18ms (Views: 15.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurants/3" for ::1 at 2019-06-17 13:11:40 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  Rendered restaurants/show.erb within layouts/application (3.4ms)
+Completed 200 OK in 19ms (Views: 15.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/4" for ::1 at 2019-06-17 13:11:41 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  Rendered restaurants/show.erb within layouts/application (3.0ms)
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/5" for ::1 at 2019-06-17 13:11:42 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  Rendered restaurants/show.erb within layouts/application (3.6ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/6" for ::1 at 2019-06-17 13:11:43 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  Rendered restaurants/show.erb within layouts/application (2.9ms)
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/7" for ::1 at 2019-06-17 13:11:44 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  Rendered restaurants/show.erb within layouts/application (3.1ms)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/8" for ::1 at 2019-06-17 13:11:44 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  Rendered restaurants/show.erb within layouts/application (3.2ms)
+Completed 200 OK in 18ms (Views: 14.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/9" for ::1 at 2019-06-17 13:11:45 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  Rendered restaurants/show.erb within layouts/application (3.0ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/10" for ::1 at 2019-06-17 13:11:46 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  Rendered restaurants/show.erb within layouts/application (2.7ms)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurants/11" for ::1 at 2019-06-17 13:11:47 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:10
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  Rendered restaurants/show.erb within layouts/application (3.6ms)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2019-06-17 13:11:47 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:16
+  Rendered restaurants/show.erb within layouts/application (3.8ms)
+Completed 200 OK in 21ms (Views: 17.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurants/11" for ::1 at 2019-06-17 13:11:48 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:10
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  Rendered restaurants/show.erb within layouts/application (4.0ms)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2019-06-17 13:11:49 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:16
+  Rendered restaurants/show.erb within layouts/application (3.5ms)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurants/2" for ::1 at 2019-06-17 13:11:51 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  Rendered restaurants/show.erb within layouts/application (3.5ms)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2019-06-17 13:11:51 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:16
+  Rendered restaurants/show.erb within layouts/application (2.0ms)
+Completed 200 OK in 34ms (Views: 12.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurants/11" for ::1 at 2019-06-17 13:11:51 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:10
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  Rendered restaurants/show.erb within layouts/application (4.1ms)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2019-06-17 13:11:52 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:16
+  Rendered restaurants/show.erb within layouts/application (3.9ms)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/1/edit" for ::1 at 2019-06-17 13:16:06 -0500
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/edit.erb within layouts/application
+  Rendered restaurants/edit.erb within layouts/application (190.9ms)
+Completed 200 OK in 218ms (Views: 201.4ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/restaurants/1" for ::1 at 2019-06-17 13:16:12 -0500
+Processing by RestaurantsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"npl6xd9ffYxMWEtDs/zh3oTC7ftDh+utrbpkYLJvgCrr36mBNOMdnwuB0WbnL7pUvg6Alqdlv/Ru7McH8b3fgw==", "restaurant"=>{"username"=>"", "name"=>"78 Cafee", "type"=>"", "street_address"=>"331 Shanahan Manors", "zip"=>"98367", "phone_number"=>"491-536-9178", "description"=>"Our mission is to be a leader in the distribution and merchandising of food, pharmacy, health and personal care items, seasonal merchandise, and related products and services. We place considerable importance on forging strong supplier partnerships. Our suppliers, large or small, local or global, are essential components in accomplishing our mission.", "img_url"=>""}, "commit"=>"Update Restaurant", "id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:24
+Unpermitted parameter: :type
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/restaurants_controller.rb:25
+  [1m[36mRestaurant Update (0.5ms)[0m  [1m[33mUPDATE "restaurants" SET "username" = ?, "name" = ?, "img_url" = ?, "updated_at" = ? WHERE "restaurants"."id" = ?[0m  [["username", ""], ["name", "78 Cafee"], ["img_url", ""], ["updated_at", "2019-06-17 18:16:12.054432"], ["id", 1]]
+  ↳ app/controllers/restaurants_controller.rb:25
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/restaurants_controller.rb:25
+Redirected to http://localhost:3000/restaurants/1
+Completed 200 OK in 7ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2019-06-17 13:16:12 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:16
+  Rendered restaurants/show.erb within layouts/application (2.8ms)
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-06-17 13:16:14 -0500
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.erb:3
+  Rendered restaurants/index.erb within layouts/application (3.0ms)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2019-06-17 13:16:15 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:16
+  Rendered restaurants/show.erb within layouts/application (4.4ms)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/1/edit" for ::1 at 2019-06-17 13:16:17 -0500
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:20
+  Rendering restaurants/edit.erb within layouts/application
+  Rendered restaurants/edit.erb within layouts/application (5.8ms)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/restaurants/1" for ::1 at 2019-06-17 13:16:20 -0500
+Processing by RestaurantsController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CvV64M2KWTyt0Udnr2K4bEnL9lEaB6m9bqzwJ3c3UkB/s6mkJjY5L+oI3UL7sePmcwebPP7l/eSt+lNANOUN6Q==", "restaurant"=>{"username"=>"", "name"=>"78 Cafe", "type"=>"", "street_address"=>"331 Shanahan Manors", "zip"=>"98367", "phone_number"=>"491-536-9178", "description"=>"Our mission is to be a leader in the distribution and merchandising of food, pharmacy, health and personal care items, seasonal merchandise, and related products and services. We place considerable importance on forging strong supplier partnerships. Our suppliers, large or small, local or global, are essential components in accomplishing our mission.", "img_url"=>""}, "commit"=>"Update Restaurant", "id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:24
+Unpermitted parameter: :type
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/restaurants_controller.rb:25
+  [1m[36mRestaurant Update (0.3ms)[0m  [1m[33mUPDATE "restaurants" SET "name" = ?, "updated_at" = ? WHERE "restaurants"."id" = ?[0m  [["name", "78 Cafe"], ["updated_at", "2019-06-17 18:16:20.237321"], ["id", 1]]
+  ↳ app/controllers/restaurants_controller.rb:25
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/restaurants_controller.rb:25
+Redirected to http://localhost:3000/restaurants/1
+Completed 200 OK in 6ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2019-06-17 13:16:20 -0500
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:16
+  Rendering restaurants/show.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:9
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:15
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/models/restaurant.rb:16
+  Rendered restaurants/show.erb within layouts/application (3.2ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants" for ::1 at 2019-06-17 13:16:22 -0500
+Processing by RestaurantsController#index as HTML
+  Rendering restaurants/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.erb:3
+  Rendered restaurants/index.erb within layouts/application (2.5ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.3ms)
+
+
