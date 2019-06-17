@@ -25,4 +25,5 @@
 <%=link_to "Next", restaurant_path(@restaurant.next_id)%>
 <%=link_to "Back", restaurant_path(@restaurant.back_id)%>
 <%=link_to "Edit", edit_restaurant_path(@restaurant.id)%>
+<%=link_to "Delete", restaurant_path(@restaurant.id), method: "DELETE"%>
 <%=link_to "Home", restaurants_path%>
