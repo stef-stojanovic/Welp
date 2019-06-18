@@ -9,7 +9,6 @@ class CustomersController < ApplicationController
     end
 
     def new
-        #if session[:customer_id] != nil
         @customer = Customer.new()
     end
 
@@ -19,11 +18,19 @@ class CustomersController < ApplicationController
     end
 
     def show
+        if session[:customer_id] != nil
         @customer = Customer.find(params[:id])
+        else
+            redirect_to '/'
+        end
     end
 
     def edit
+        if session[:customer_id] != nil
         @customer = Customer.find(params[:id])
+        else
+            redirect_to '/'
+        end
     end
     
     def update
