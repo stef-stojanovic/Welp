@@ -1,12 +1,19 @@
 <style> table, th, td {
     border: 1px solid;
 }
+    }
     table {
-        height: 100px
+        height: 70%;
+        width: 70%;
+        display: flex
+
     }
     .image_cap{
-        max-height:300px;
-        width: 100%;
+        max-height: 250px;
+        max-width: 100%;
+    }
+    td{
+         word-wrap: break-word;
     }
     
 </style>
@@ -34,7 +41,7 @@
 
             </tr>
     </tbody>
-</table>
+</table><br>
 <%=link_to "Edit", edit_food_path(@food.id)%><br>
 <%=link_to "Next", food_path(@food.increment)%><br>
 <%=link_to "Back", food_path(@food.decrement)%><br>

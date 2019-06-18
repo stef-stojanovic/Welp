@@ -1,10 +1,15 @@
 class CustomersController < ApplicationController
 
     def index
+        if session[:customer_id] != nil
         @customers = Customer.all
+        else
+            redirect_to '/'
+        end
     end
 
     def new
+        #if session[:customer_id] != nil
         @customer = Customer.new()
     end
 
@@ -42,6 +47,7 @@ class CustomersController < ApplicationController
     end
 
     def authenticate
+        byebug
         customer = Customer.find_by(username:(params[:username]))
         if customer != nil && customer.authenticate(params[:password])
             session[:customer_id] = customer.id
@@ -49,6 +55,11 @@ class CustomersController < ApplicationController
         else
             #error
         end
+    end
+
+    def log_out
+        session[:customer_id] = nil
+        redirect_to '/'
     end
 
 end
