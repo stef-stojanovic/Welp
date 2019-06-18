@@ -11,32 +11,35 @@
     
 </style>
 
-<h1> Order - <%=@order.restaurant.name%></h1>
+<h1> Order - <%=@order.restaurant.name%> - <%=@order.customer.name%></h1>
 
 <table>
     <thead>
         <tr>
-        <th>Order #</th>
-        <th>Restaurant</th>
-        <th>Customer</th>
-        <th>Price</th>
-        <th>Ordered Items</th>
-       
+            <th>Item</th>
+            <th>Price</th>
+            <th>Description</th>
         </tr>
     </thead>
     <tbody>
+        <tr> <% @order.foods.each do |food| %>
+            <td><%= food.name %></td>
+            <td><%= food.price %></td>
+            <td><%= food.description %></td>
+        </tr>
+            <% end %>
         <tr>
-            <td><%= @order.id %></td>
-            <td><%= @order.restaurant.name %></td>
-            <td><%= @order.customer.name %></td>
-            <td><%= @order.price %></td>
-            <td><%= @foods%></td>
-            </tr>
+            <td>Total</td>
+            <td><%= @order.price %>
+        </tr>
+
     </tbody>
 </table>
-<%=link_to "Edit", edit_order_path(@order.id)%><br>
-<%=link_to "Next", order_path(@order.increment)%><br>
-<%=link_to "Back", order_path(@order.decrement)%><br>
-<%=link_to "All Orders", orders_path%><br>
-<%=link_to "Delete", order_path(@order.id), method: "DELETE"%>
+<%= link_to "Home", customer_path(session[:customer_id]) %>
+<%link_to "Edit", edit_order_path(@order.id)%><br>
+
 </body>
+<%link_to "Next", order_path(@order.increment)%><br>
+<%link_to "Back", order_path(@order.decrement)%><br>
+<%link_to "All Orders", orders_path%><br>
+<%link_to "Delete", order_path(@order.id), method: "DELETE"%>

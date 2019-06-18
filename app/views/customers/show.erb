@@ -1,6 +1,10 @@
 <style> table, th, td {
     border: 1px solid;
 }
+    caption {
+        font-weight: bold;
+        text-align: left;
+        }
     table {
         height: 100px
     }
@@ -11,9 +15,8 @@
     
 </style>
 
-<h1> Home Page </h1>
-
 <table>
+<caption>Profile</h3>
     <thead>
         <tr>
         <th>Name</th>
@@ -33,9 +36,10 @@
             <td><img class= 'image_cap' src="<%= @customer.img_url %>" alt="<%=@customer.name %>" /> </td>
             </tr>
     </tbody>
-</table>
-<h5>My Reviews</h5>
+</table><br>
+
 <table>
+<caption>Reviews</caption>
     <thead>
         <tr>
         <th>Review</th>
@@ -53,34 +57,40 @@
             </tr>
             <% end %>
     </tbody>
-</table>
-<h5>My Orders</h5>
-<table>
-    <thead>
-        <tr>
-        <th>Order</th>
-        <th>Restaurant</th>
-        <th>Price</th>
-        <th>Ordered Items</th>
-        <th>Details</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr> <% @customer.orders.each do |order| %>
-            <td><%= order.id %></td>
-            <td><%= order.restaurant.name %></td>
-            <td><%= order.price %></td>
-            <td><%= order.foods.map {|food| food.name } %></td>
-            </tr>
-            <% end %>
-    </tbody>
 </table><br>
+<%if session[:customer_id] == @customer.id %>
+    <table>
+        <caption>My Orders</caption>
+        <thead>
+            <tr>
+            <th>Restaurant</th>
+            <th>Price</th>
+            <th>Ordered Items</th>
+            <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <% @customer.orders.each do |order| %>
+                <td><%= order.restaurant.name %></td>
+                <td><%= order.price %></td>
+                <td><%= order.foods.map {|food| food.name } %></td>
+                <td><%= link_to "Show", order_path(order.id)%></td>
+                </tr>
+                <% end %>
+            <tr>
+                <td>Total</td>
+                <td><%= @customer.total_orders%></td>
+                </tr>
+        </tbody>
+    </table><br>
+<% end %>
 
-<%=link_to "Edit my profile", edit_customer_path(@customer.id)%><br>
+
+<%=link_to "Edit my profile", edit_customer_path(@customer.id)%>
 <%=link_to "Delete my profile", customer_path(@customer.id), method: "DELETE"%>
-<%=link_to "Restaurants", restaurants_path %>
 <%=link_to "Add a Review", new_review_path %>
 <%=link_to "Restaurants", restaurants_path %>
+<%= link_to "Log Out", '/logout' %><br>
 <%link_to "Next", customer_path(@customer.increment)%><br>
 <%link_to "Back", customer_path(@customer.decrement)%><br>
 <%link_to "All Customers", customers_path%><br>

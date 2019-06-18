@@ -14,7 +14,7 @@ class CustomersController < ApplicationController
 
     def create
         customer = Customer.create(permit_params)
-        redirect_to customer
+        redirect_to '/'
     end
 
     def show

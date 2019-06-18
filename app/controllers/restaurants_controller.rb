@@ -9,7 +9,7 @@ class RestaurantsController < ApplicationController
 
     def create
         restaurant = Restaurant.create(permit_params)
-        redirect_to restaurant
+        #redirect_to restaurant
     end
 
     def show
