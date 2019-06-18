@@ -5,11 +5,11 @@ class ReviewsController < ApplicationController
     end
 
     def new
-        if flash[:review]
+        if flash[:id] != nil
             @@review = Review.new
-            @@review.restaurant_id = flash[:review]["id"]
+            @@review.restaurant_id = flash[:id]
             @review = @@review
-            @restaurant = Restaurant.find(flash[:review]["id"])
+            @restaurant = Restaurant.find(flash[:id])
             flash[:if] = "update"
         else
             flash[:if] = "new"

@@ -14,7 +14,7 @@ class RestaurantsController < ApplicationController
 
     def show
         @restaurant = Restaurant.find(params[:id])
-        flash.keep[:review] = {id: params[:id]}
+        flash.keep[:id] = params[:id]
     end
 
     def edit
