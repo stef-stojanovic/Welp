@@ -5,15 +5,25 @@ class ReviewsController < ApplicationController
     end
 
     def new
-        @review = Review.new
-        if flash[:restaurant_id]
-            @restaurant = Restaurant.find(flash[:restaurant_id])
+        if flash[:review]
+            @@review = Review.new
+            @@review.restaurant_id = flash[:review]["id"]
+            @review = @@review
+            @restaurant = Restaurant.find(flash[:review]["id"])
+            flash[:if] = "update"
+        else
+            flash[:if] = "new"
+            @review = Review.new
         end
     end
 
     def create
-        review = Review.create(permit_params)
-        redirect_to review
+        if flash[:if] == "update"
+            @@review.update(permit_params)
+            redirect_to @@review
+        else review = Review.create(permit_params)
+            redirect_to review
+        end
     end
 
     def show
