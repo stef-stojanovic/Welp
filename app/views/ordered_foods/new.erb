@@ -1,2 +1,6 @@
-take in a order id <br>
-pick what food with prices <br>
+<h1>Pick a Food to Order</h1>
+<%=form_with model: @orderedfood do |f|%>
+    <%=f.label :food%>
+    <%=f.collection_select :food_id, @foods, :id, :name %><br>
+    <%=f.submit%>
+<%end%>

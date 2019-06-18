@@ -1,17 +1,11 @@
- <%=form_with model: @order do |form|%>
-    <div>
-        <%=form.label :restaurant_id%>
-        <%=form.number_field :restaurant_id%>
-    </div>
-    <div>
-        <%=form.label :customer_id%>
-        <%=form.number_field :customer_id%>
-    </div>
-    <div>       
-        <%=form.label :price%>
-        <%=form.number_field :price%>
-    </div>
+<h1>Add To Order</h1>
 
-    <%=form.submit %>
+<h3>Food</h3>
+<%@order.foods.each do |f|%>
+    <%="#{f.name} Price #{f.price}"%><br>
+<%end%>
 
+<%=form_with(model: @order) do |f|%>
+    <%=link_to "Add an Item to Order", new_ordered_food_path%>
+    <%=f.submit%>
 <%end%>
