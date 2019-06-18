@@ -3,6 +3,14 @@ class Food < ApplicationRecord
     has_many :orders, through: :ordered_foods
     belongs_to :restaurant
 
+    # def self.options_for_order(foods)
+    #     options = []
+    #     foods.each do |food|  
+    #         options << {food.name => food.price}
+    #     end
+    #     options
+    # end
+
     def increment
         if self.id == Food.last.id
             next_id = Food.first.id
