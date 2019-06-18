@@ -6,6 +6,8 @@ class Customer < ApplicationRecord
     has_many :restaurants, through: :reviews
     has_secure_password
 
+    validates :username, uniqueness: true
+
     def increment
         if self.id == Customer.last.id
             next_id = Customer.first.id
