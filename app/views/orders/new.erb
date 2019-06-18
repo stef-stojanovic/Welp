@@ -1,18 +1,6 @@
 <h1>Create New Order</h1>
 
-<%=form_with(model: @order) do |form|%>
-    <div>
-    <%=form.label :restaurant_id %>
-    <%=form.collection_select :restaurant_id, Restaurant.all, :id, :name %>
-    </div>
-    <div>
-    <%=form.label :customer_id %>
-    <%=form.collection_select :customer_id, Customer.all, :id, :name %>
-    </div>
-    <div>
-    <%=form.label :price %>
-    <%=form.number_field :price %>
-    </div>
-
-    <%=form.submit%>
+<%=form_with(model: @order) do |f|%>
+    <%=link_to "Add an Item to Order", new_ordered_food_path%>
+    <%=f.submit%>
 <%end%>

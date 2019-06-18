@@ -4,7 +4,8 @@ class OrdersController < ApplicationController
     end
 
     def new
-        @order = Order.new
+        @restaurant = Restaurant.find(flash[:id])
+        @order = Order.new(customer_id: session[:customer_id])
     end
 
     def create

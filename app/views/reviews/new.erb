@@ -1,11 +1,7 @@
 <h1>New Review</h1>
 <%=form_with model: @review do |f|%>
-    <%if flash[:review]%>
-        <h3><%=@restaurant.name%></h3>
-    <%else%>
         <%=f.label :restaurant%>
         <%=f.collection_select :restaurant_id, Restaurant.all, :id, :name%><br>
-    <%end%>
         <%=f.label :customer%>
         <%=f.collection_select :customer_id, Customer.all, :id, :name%><br>
         <%=f.label :subject%>
