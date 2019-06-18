@@ -23,6 +23,11 @@ class Customer < ApplicationRecord
             previous_id = self.id - 1
         end
     end
+
+    def total_orders
+        price_arr = self.orders.map {|order|order.price}
+        price_arr.sum
+    end
     
 
 end

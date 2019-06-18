@@ -6,6 +6,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Restaurant.destroy_all
+Customer.destroy_all
+Food.destroy_all
+
+
 10.times do
     name = Faker::Restaurant.name
     type = Faker::Restaurant.type 
@@ -14,7 +20,6 @@
     address = Faker::Address.street_address
     phone_number = Faker::PhoneNumber.cell_phone
     Restaurant.create(name: name, restaurant_type: type, description: description, street_address: address, zip: zip, phone_number: phone_number)
-
 end
 
 Customer.create(name: "Stefan Stojanovic", username: "stefan.stojanovic", password: "1234", description: "Flatiron", img_url:  "https://media.licdn.com/dms/image/C5603AQElx_wuovn-kw/profile-displayphoto-shrink_200_200/0?e=1566432000&v=beta&t=mpvI6QKcoXfYmEtebsU7TGPzcIIqZBzwqAoUXloEC2U")

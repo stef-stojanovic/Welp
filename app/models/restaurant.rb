@@ -5,10 +5,6 @@ class Restaurant < ApplicationRecord
     has_many :customers, through: :reviews
     has_many :foods
 
-    has_secure_password
-
-    validates :username, uniqueness: true
-
     def next_id
         if (self.id + 1 == Restaurant.last.id + 1)
             next_id = Restaurant.first.id
