@@ -5,25 +5,32 @@ class OrdersController < ApplicationController
 
     def new
         @restaurant = Restaurant.find(flash[:id])
-        @order = Order.new(customer_id: session[:customer_id])
+        flash.keep[:restaurant_id] = @restaurant.id
+        @order = Order.create(customer_id: session[:customer_id], restaurant_id: @restaurant.id)
+        @@order = @order
+        session[:order_id] = @order.id
     end
 
     def create
-        order = Order.create(permit_params)
+        order = @@order.update(permit_params)
         redirect_to order
     end
 
     def show
+        session[:order_id] = nil
         @order = Order.find(params[:id])
+        @foods = []
+        @order.foods.each {|o| @foods << o.name}
     end
 
     def edit
         @order = Order.find(params[:id])
+        session[:order_id] = @order.id
     end
     
     def update
         order = Order.find(params[:id])
-        order.update(permit_params)
+        session[:order_id] = nil
         redirect_to order
     end
     

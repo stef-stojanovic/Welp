@@ -47,7 +47,6 @@ class CustomersController < ApplicationController
     end
 
     def authenticate
-        byebug
         customer = Customer.find_by(username:(params[:username]))
         if customer != nil && customer.authenticate(params[:password])
             session[:customer_id] = customer.id

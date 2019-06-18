@@ -4,6 +4,8 @@ class Order < ApplicationRecord
     has_many :ordered_foods, dependent: :destroy
     has_many :foods, through: :ordered_foods
 
+#    validates :price, presence: true
+
     def increment
         if self.id == Order.last.id
             next_id = Order.first.id
