@@ -9,6 +9,7 @@ class OrdersController < ApplicationController
         @order = Order.create(customer_id: session[:customer_id], restaurant_id: @restaurant.id)
         @@order = @order
         session[:order_id] = @order.id
+        @order.update(price: 0)
     end
 
     def create
