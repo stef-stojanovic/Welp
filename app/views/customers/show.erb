@@ -1,98 +1,131 @@
-<style> table, th, td {
-    border: 1px solid;
-}
-    caption {
-        font-weight: bold;
-        text-align: left;
-        }
-    table {
-        height: 100px
-    }
-    .image_cap{
-        max-height:300px;
-        width: 100%;
-    }
+<!DOCTYPE html>
+<html>
     
-</style>
+<head>
+	<title>My Awesome Login Page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">   
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<table>
-<caption>Profile</h3>
-    <thead>
-        <tr>
-        <th>Name</th>
-        <th>Username</th>
-        <th>Balance</th>
-        <th>Description</th>
-        <th>Image_URL</th>
+<!------ Include the above in your HEAD tag ---------->
 
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><%= @customer.name %></td>
-            <td><%= @customer.username %></td>
-            <td><%= @customer.balance %></td>
-            <td><%= @customer.description %></td>
-            <td><img class= 'image_cap' src="<%= @customer.img_url %>" alt="<%=@customer.name %>" /> </td>
-            </tr>
-    </tbody>
-</table><br>
+    <style>	/* Coded with love by Mutiullah Samim */
+		body,
+		html {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			background: #DCDCDC;
+		}
+		.user_card {
+			height: 400px;
+			width: 350px;
+			margin-top: auto;
+			margin-bottom: auto;
+			background: #f39c12;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			padding: 10px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			border-radius: 5px;
 
-<table>
-<caption>Reviews</caption>
-    <thead>
-        <tr>
-        <th>Review</th>
-        <th>Restaurant</th>
-        <th>Rating</th>
-        <th>Details</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr> <% @customer.reviews.each do |review| %>
-            <td><%= review.subject %></td>
-            <td><%= review.restaurant.name %></td>
-            <td><%= review.rating %></td>
-            <td><%= link_to "Show", review_path(review.id) %></td>
-            </tr>
-            <% end %>
-    </tbody>
-</table><br>
-<%if session[:customer_id] == @customer.id %>
-    <table>
-        <caption>My Orders</caption>
-        <thead>
-            <tr>
-            <th>Restaurant</th>
-            <th>Price</th>
-            <th>Ordered Items</th>
-            <th>Details</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr> <% @customer.orders.each do |order| %>
-                <td><%= order.restaurant.name %></td>
-                <td><%= order.price %></td>
-                <td><%= order.foods.map {|food| food.name } %></td>
-                <td><%= link_to "Show", order_path(order.id)%></td>
-                </tr>
-                <% end %>
-            <tr>
-                <td>Total</td>
-                <td><%= @customer.total_orders%></td>
-                </tr>
-        </tbody>
-    </table><br>
-
-
-
-<%=link_to "Edit my profile", edit_customer_path(@customer.id)%>
-<%=link_to "Delete my profile", customer_path(@customer.id), method: "DELETE"%>
-<%= link_to "Log Out", '/logout' %><br>
-<%=link_to "Add a Review", new_review_path %>
-<%=link_to "Restaurants", restaurants_path %>
-<% end %>
-<%=link_to "Customers", customers_path%>
-<%=link_to "Home", customer_path(session[:customer_id])%>
+		}
+		.brand_logo_container {
+			position: absolute;
+			height: 170px;
+			width: 170px;
+			top: -75px;
+			border-radius: 50%;
+			background: #006600;
+			padding: 10px;
+			text-align: center;
+		}
+		.brand_logo {
+			height: 150px;
+			width: 150px;
+			border-radius: 50%;
+			border: 2px solid white;
+		}
+		.form_container {
+			margin-top: 100px;
+		}
+		.login_btn {
+			width: 100%;
+			background: #006600 !important;
+			color: white !important;
+		}
+		.login_btn:focus {
+			box-shadow: none !important;
+			outline: 0px !important;
+		}
+		.login_container {
+			padding: 0 2rem;
+		}
+		.input-group-text {
+			background: #006600 !important;
+			color: white !important;
+			border: 0 !important;
+			border-radius: 0.25rem 0 0 0.25rem !important;
+		}
+		.input_user,
+		.input_pass:focus {
+			box-shadow: none !important;
+			outline: 0px !important;
+		}
+		.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+			background-color: #c0392b !important;
+		}
+        .white_text {
+            color: white;
+        }
+        </style>
+</head>
+<!--Coded with love by Mutiullah Samim-->
+<body>
+	<div class="container h-100">
+		<div class="d-flex justify-content-center h-100">
+			<div class="user_card">
+				<div class="d-flex justify-content-center">
+					<div class="brand_logo_container">
+						<img src="<%=@customer.img_url%>"  class="brand_logo" alt="Logo">
+					</div>
+				</div>
+				<div class="d-flex justify-content-center form_container">
+					<form method ="POST" action = 'customers/authenticate'>
+						<div class="input-group mb-3">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+							<input type="text" name="username" class="form-control input_user" value="" placeholder="username">
+						</div>
+						<div class="input-group mb-2">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-key"></i></span>
+							</div>
+							<input type="password" name="password" class="form-control input_pass" value="" placeholder="password">
+						</div>
+						<!--<div class="form-group">
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="customControlInline">
+								<label class="custom-control-label" for="customControlInline">Remember me</label>
+							</div>
+						</div>		-->		
+                        <div class="d-flex justify-content-center mt-3 login_container">
+                        <input type="submit" value="Login" class="btn login_btn">
+					            <!--<button type="button" name="button" class="btn login_btn">Login</button>-->
+				        </div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
+</html>
 
