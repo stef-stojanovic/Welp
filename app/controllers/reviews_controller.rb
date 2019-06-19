@@ -7,30 +7,17 @@ class ReviewsController < ApplicationController
     def new
         @@review = Review.new
         @@review.customer_id = session[:customer_id]
-        
+        @review = @@review
         if flash[:id] != nil
             @@review.restaurant_id = flash[:id]
-            # @@review.customer_id = session[:customer_id]
-            # @review = @@review
-            # @restaurant = Restaurant.find(flash[:id])
-            # flash[:if] = "update"
-        else
-            # flash[:if] = "new"
-            # @@review = Review.new
-            # @@review.customer_id = session[:customer_id]
+            flash[:if] = "update"
         end
-        @review = @@review
+
     end
 
     def create
-      
-        if flash[:if] == "update"
-            review = @@review.update(permit_params)
-            redirect_to review
-        else 
-            review = @@review.update(permit_params)
-            redirect_to review
-        end
+        @@review.update(permit_params)
+        redirect_to @@review
     end
 
     def show
