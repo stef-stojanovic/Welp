@@ -27,12 +27,20 @@ class OrdersController < ApplicationController
     def edit
         @order = Order.find(params[:id])
         session[:order_id] = @order.id
+        customer = Customer.find(session[:customer_id])
+        price = customer.balance -= @order.price
     end
     
     def update
         order = Order.find(params[:id])
-        session[:order_id] = nil
-        redirect_to order
+        if order.foods == []
+            res = Restaurant.find(order.restaurant_id)
+            order.destroy
+            redirect_to res
+        else
+            session[:order_id] = nil
+            redirect_to order
+        end
     end
     
     def destroy
