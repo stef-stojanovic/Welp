@@ -13,14 +13,13 @@ class CustomersController < ApplicationController
     end
 
     def create
-        byebug
         customer = Customer.create(permit_params)
         redirect_to '/'
     end
 
     def show
         if session[:customer_id] != nil
-        @customer = Customer.find(params[:id])
+        @customer = Customer.find(session[:customer_id])
         else
             redirect_to '/'
         end
@@ -28,7 +27,7 @@ class CustomersController < ApplicationController
 
     def edit
         if session[:customer_id] != nil
-        @customer = Customer.find(params[:id])
+        @customer = Customer.find(session[:customer_id])
         else
             redirect_to '/'
         end
