@@ -2,8 +2,10 @@
 
 <h3>Food</h3>
 <%@order.foods.each do |f|%>
-    <%="#{f.name} Price #{f.price}"%><br>
-<%end%>
+    <%="#{f.name} Price #{f.price}"%>
+    <% ordered = OrderedFood.find_by(order_id: @order.id, food_id: f.id)%>
+    <%=link_to "Remove", ordered_food_path(ordered.id), method: "DELETE"%><br>
+    <%end%>
 
 <%=form_with(model: @order) do |f|%>
     <%=link_to "Add an Item to Order", new_ordered_food_path%>
