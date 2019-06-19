@@ -83,16 +83,16 @@
                 </tr>
         </tbody>
     </table><br>
-<% end %>
+
 
 
 <%=link_to "Edit my profile", edit_customer_path(@customer.id)%>
 <%=link_to "Delete my profile", customer_path(@customer.id), method: "DELETE"%>
+<%= link_to "Log Out", '/logout' %><br>
 <%=link_to "Add a Review", new_review_path %>
 <%=link_to "Restaurants", restaurants_path %>
-<%= link_to "Log Out", '/logout' %><br>
-<%link_to "Next", customer_path(@customer.increment)%><br>
-<%link_to "Back", customer_path(@customer.decrement)%><br>
-<%link_to "All Customers", customers_path%><br>
+<% end %>
+<%=link_to "Customers", customers_path%>
+<%=link_to "Home", customer_path(session[:customer_id])%>
 </body>
 

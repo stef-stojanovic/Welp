@@ -10,9 +10,7 @@ class ReviewsController < ApplicationController
         @review = @@review
         if flash[:id] != nil
             @@review.restaurant_id = flash[:id]
-            flash[:if] = "update"
         end
-
     end
 
     def create
@@ -37,7 +35,7 @@ class ReviewsController < ApplicationController
     def destroy
         review = Review.find(params[:id])
         review.destroy
-        redirect_to reviews_path
+        redirect_to customer_path(session[:customer_id])
     end
 
     def permit_params

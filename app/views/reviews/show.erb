@@ -12,5 +12,5 @@
     </li>
 </ul>
 <%=link_to "Edit", edit_review_path(@review.id)%>
-<%=link_to "Delete", review_path(@review.id), method: "DELETE", data: {confirm: "Are you sure?"} %>
-<%=link_to "Home", reviews_path%>
+<%=link_to "Delete", review_path(@review.id), method: "DELETE", data: {confirm: "Are you sure?} "%>
+<%=link_to "Home", customer_path(session[:customer_id])%><br>
