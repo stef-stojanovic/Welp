@@ -8,6 +8,4 @@ post 'customers/authenticate', to: 'customers#authenticate'
 
 get '/logout', to: 'customers#log_out'
 
-
-
 end
