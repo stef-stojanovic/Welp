@@ -13,6 +13,7 @@ class CustomersController < ApplicationController
     end
 
     def create
+        byebug
         customer = Customer.create(permit_params)
         redirect_to '/'
     end
