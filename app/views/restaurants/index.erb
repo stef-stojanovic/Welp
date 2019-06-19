@@ -7,5 +7,5 @@
     </li>
     <%end%>
 </ul>
-<h4><%=link_to "Create New Restaurant", new_restaurant_path%><br>
-<%= link_to "Customers", customers_path %>
+<%=link_to "Home", customer_path(session[:customer_id])%><br>
+
