@@ -1,5 +1,8 @@
-<style> table, th, td {
+<style> 
+table, th, td {
     border: 1px solid;
+    padding: 3px;
+    margin: 5px;
 }
     table {
         height: 100px
@@ -8,15 +11,21 @@
         max-height:300px;
         width: 100%;
     }
-    
-</style>
-<h1>Users</h1>
+    .container {
+        text-align: center;
 
-<table>
+    }
+    .linkToHome{
+        font-size: 25px;
+    }
+</style>
+<div class= "container" > 
+<h1>Users</h1>
+<table class = "table table-dark">
     <thead>
         <tr>
-        <th>Name</th>
-        <th>Details</th>
+        <th scope="col" >Name</th>
+        <th scope="col" >Details</th>
         </tr>
         
     </thead>
@@ -31,5 +40,9 @@
         <% end %>
     </tbody>
 </table>
+
+<div class = "linkToHome"> 
 <%=link_to "Home", customer_path(session[:customer_id])%><br>
+</div>
+</div>
 </body>
