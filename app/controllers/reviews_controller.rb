@@ -10,9 +10,7 @@ class ReviewsController < ApplicationController
         @review = @@review
         if flash[:id] != nil
             @@review.restaurant_id = flash[:id]
-            flash[:if] = "update"
         end
-
     end
 
     def create
