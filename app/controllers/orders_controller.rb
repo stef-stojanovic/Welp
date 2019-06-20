@@ -28,7 +28,6 @@ class OrdersController < ApplicationController
         @order = Order.find(params[:id])
         session[:order_id] = @order.id
         customer = Customer.find(session[:customer_id])
-        price = customer.balance -= @order.price
     end
     
     def update
