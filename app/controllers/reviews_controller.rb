@@ -8,8 +8,11 @@ class ReviewsController < ApplicationController
         @@review = Review.new
         @@review.customer_id = session[:customer_id]
         @review = @@review
+        puts @review
+        puts @review.id
+        puts flash[:id]
         if flash[:id] != nil
-            @@review.restaurant_id = flash[:id]
+            @review.restaurant_id = flash[:id]
         end
     end
 

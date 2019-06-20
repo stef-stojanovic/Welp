@@ -27,6 +27,6 @@ class OrderedFoodsController < ApplicationController
     end
 
     def permit_params
-        params.require(:ordered_food).permit(:food_id)
+        params.permit(:food_id)
     end
 end

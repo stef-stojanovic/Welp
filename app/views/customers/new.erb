@@ -27,7 +27,7 @@
    
    }
    .input-group-text {
-			background: #006600 !important;
+			background: #f39c12 !important;
 			color: white !important;
 			border: 0 !important;
 			border-radius: 0.25rem 0 0 0.25rem !important;
@@ -66,7 +66,7 @@ border:1px solid #ccc !important;
    	
    .submit_btn{
    	border-radius: 15px !important;
-    background-color: ##95c714 !important;
+    background-color: #f39c12 !important;
     border: 0 !important;
    }
 
@@ -121,7 +121,7 @@ border:1px solid #ccc !important;
 							<div class="input-group-prepend">
 								<span class="input-group-text br-15"><i class="fas fa-align-justify"></i></span>
 							</div>
-							<input type="text_area" name="customer[description]" placeholder="Description" class="form-control"/>
+                            <textarea rows="4" cols="50" name="customer[description]" value="<%=@customer.description%>"placeholder="Description"  class="form-control"></textarea>
 						</div>
 					</div><br>
                     <input type="submit" value="Submit" class="btn btn-success btn-sm float-right submit_btn">

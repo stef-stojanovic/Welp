@@ -14,19 +14,19 @@
 	html,body{
 			height: 100%;
 			margin: 0;
-            background: #F5F5F5;
-		
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(149,199,20,1) 0%, rgba(0,212,255,1) 96%);
 		}
    
    .myForm{
-   	background-color: #f39c12 !important;
+   	background-color: rgba(0,0,0,0.5) !important;
    	padding: 15px !important;
    border-radius: 15px !important;
    color: white;
    
    }
    .input-group-text {
-			background: #006600 !important;
+			background: #f39c12 !important;
 			color: white !important;
 			border: 0 !important;
 			border-radius: 0.25rem 0 0 0.25rem !important;
@@ -65,7 +65,7 @@ border:1px solid #ccc !important;
    	
    .submit_btn{
    	border-radius: 15px !important;
-    background-color: #006600 !important;
+    background-color: #f39c12 !important;
     border: 0 !important;
    }
    .color{
@@ -76,10 +76,6 @@ border:1px solid #ccc !important;
     .middle_align {
         vertical-align: text-bottom;
     }
-
-   .card-header{
-       background-color: #006600;
-   }
 
    </style>
 
@@ -94,7 +90,7 @@ border:1px solid #ccc !important;
 				<h3>Edit Your Info</h3>
 			</div>
 			<div class="card-body">
-				<form method="POST" action="/customers/<%=@customer.id%>" >
+				<form method="POST" action="/customers/<%=@customer.id%>" id="1" >
                 <input type="hidden" name="_method" value="PATCH">
                 <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 					<div id="dynamic_container">
@@ -122,11 +118,11 @@ border:1px solid #ccc !important;
 							</div>
 							<input type="text" name="customer[img_url]" placeholder="Profile Picture" class="form-control"/>
 						</div>
-                        <div class="input-group mt-3">
+                         <div class="input-group mt-3">
 							<div class="input-group-prepend">
 								<span class="input-group-text br-15"><i class="fas fa-align-justify"></i></span>
 							</div>
-							<input type="text_area" name="customer[description]" value="<%=@customer.description%>"placeholder="Description" class="form-control"/>
+                            <textarea rows="4" cols="50" name="customer[description]" value="<%=@customer.description%>"placeholder="Description"  class="form-control">"<%=@customer.description%>"</textarea>
 						</div>
 					</div><br>
                     <input type="submit" value="Submit" class="btn btn-success btn-sm float-right submit_btn">
