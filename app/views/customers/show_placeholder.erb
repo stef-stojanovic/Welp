@@ -1,0 +1,98 @@
+
+<style> table, th, td {
+    border: 1px solid;
+}
+    caption {
+        font-weight: bold;
+        text-align: left;
+        }
+    table {
+        height: 100px
+    }
+    .image_cap{
+        max-height:300px;
+        width: 100%;
+    }
+    
+</style>
+
+<table>
+<caption>Profile</h3>
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Balance</th>
+        <th>Description</th>
+        <th>Image_URL</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><%= @customer.name %></td>
+            <td><%= @customer.username %></td>
+            <td><%= @customer.balance %></td>
+            <td><%= @customer.description %></td>
+            <td><img class= 'image_cap' src="<%= @customer.img_url %>" alt="<%=@customer.name %>" /> </td>
+            </tr>
+    </tbody>
+</table><br>
+
+<table>
+<caption>Reviews</caption>
+    <thead>
+        <tr>
+        <th>Review</th>
+        <th>Restaurant</th>
+        <th>Rating</th>
+        <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr> <% @customer.reviews.each do |review| %>
+            <td><%= review.subject %></td>
+            <td><%= review.restaurant.name %></td>
+            <td><%= review.rating %></td>
+            <td><%= link_to "Show", review_path(review.id) %></td>
+            </tr>
+            <% end %>
+    </tbody>
+</table><br>
+<%if session[:customer_id] == @customer.id %>
+    <table>
+        <caption>My Orders</caption>
+        <thead>
+            <tr>
+            <th>Restaurant</th>
+            <th>Price</th>
+            <th>Ordered Items</th>
+            <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <% @customer.orders.each do |order| %>
+                <td><%= order.restaurant.name %></td>
+                <td><%= order.price %></td>
+                <td><%= order.foods.map {|food| food.name } %></td>
+                <td><%= link_to "Show", order_path(order.id)%></td>
+                </tr>
+                <% end %>
+            <tr>
+                <td>Total</td>
+                <td><%= @customer.total_orders%></td>
+                </tr>
+        </tbody>
+    </table><br>
+
+
+
+<%=link_to "Edit my profile", edit_customer_path(@customer.id)%>
+<%=link_to "Delete my profile", customer_path(@customer.id), method: "DELETE"%>
+<%= link_to "Log Out", '/logout' %><br>
+<%=link_to "Add a Review", new_review_path %>
+<%=link_to "Restaurants", restaurants_path %>
+<% end %>
+<%=link_to "Customers", customers_path%>
+<%=link_to "Home", customer_path(session[:customer_id])%>
+</body>

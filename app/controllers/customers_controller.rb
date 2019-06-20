@@ -19,7 +19,7 @@ class CustomersController < ApplicationController
 
     def show
         if session[:customer_id] != nil
-        @customer = Customer.find(session[:customer_id])
+        @customer = Customer.find(params[:id])
         else
             redirect_to '/'
         end
