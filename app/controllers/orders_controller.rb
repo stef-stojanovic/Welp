@@ -11,10 +11,11 @@ class OrdersController < ApplicationController
         @order = Order.create(customer_id: session[:customer_id], restaurant_id: @restaurant.id)
         @@order = @order
         session[:order_id] = @order.id
-        @order.update(price: 0)
+        
     end
 
     def create
+        byebug
         order = @@order.update(permit_params)
         redirect_to order
     end
@@ -34,14 +35,23 @@ class OrdersController < ApplicationController
     
     def update
         order = Order.find(params[:id])
-        if order.foods == []
-            res = Restaurant.find(order.restaurant_id)
-            order.destroy
-            redirect_to res
-        else
-            session[:order_id] = nil
-            redirect_to order
+        order.update(price: 0)
+        params[:ordered_food_ids].each do |f| 
+            b = Food.find(f)
+            price = order.price += b.price
+            order.update(price: price)
+            OrderedFood.create(order_id: params[:id], food_id: f)
         end
+        
+        redirect_to customer_path(session[:customer_id])
+        # if order.foods == []
+        #     res = Restaurant.find(order.restaurant_id)
+        #     order.destroy
+        #     redirect_to res
+        # else
+        #     session[:order_id] = nil
+        #     
+        # end
     end
     
     def destroy
