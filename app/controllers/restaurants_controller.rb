@@ -52,13 +52,15 @@ class RestaurantsController < ApplicationController
     end
 
     def review_average
-        arr = []
-        Restaurant.all.each { |r|
-            r.reviews.each { |rev| arr << rev.rating 
+        Restaurant.all.each do |r| 
+            arr = []
+            r.reviews.each do |rev| 
+                arr << rev.rating
                 avg = 0
-                avg = arr.inject(0.0){|sum, n| (sum + n)}/ arr.size
-                    r.update(rating: avg)
-    }
-    }
+                var = arr.sum  #.inject(0.0){|sum, n| (sum + n)}
+                avg = var / arr.length
+                r.update(rating: avg)
+            end
+        end
     end
 end
