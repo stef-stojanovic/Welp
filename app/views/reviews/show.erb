@@ -134,9 +134,6 @@
 			-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
-        .table {
-            display: block;
-        }
 
         .white_row {
             background-color: white;
@@ -194,6 +191,8 @@
                             </tr>
                         </tbody>
                     </table>
+                    <a class="btn btn-primary btn-lg btn-block button_green" href="<%= new_review_path %>">Add a Review</a>
+                    <a class="btn btn-primary btn-lg btn-block button_green" href="<%= customer_path(session[:customer_id]) %>">Home</a>
                 </div>
         </div>
     </div>
