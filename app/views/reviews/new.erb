@@ -100,7 +100,7 @@ border:1px solid #ccc !important;
 	<div class="d-flex justify-content-center">
 		<div class="card mt-5 col-md-4 animated bounceInDown myForm">
 			<div class="card-header">
-				<h3>User Details</h3>
+				<h3>New Review</h3>
 			</div>
 			<div class="card-body">
 				<form method="POST" action= '/reviews' >
@@ -146,6 +146,7 @@ border:1px solid #ccc !important;
 						</div>
 					</div><br>
                     <input type="submit" value="Submit" class="btn btn-success btn-sm float-right submit_btn">
+				<a class="btn btn-success btn-sm float-left submit_btn" href="<%=customer_path(session[:customer_id])%>">Home</a>  
 				</form>
 			</div>
 		</div>
