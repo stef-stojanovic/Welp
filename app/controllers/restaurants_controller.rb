@@ -1,5 +1,5 @@
 class RestaurantsController < ApplicationController
-    before_action :review_average
+    # before_action :review_average
     def index
         @restaurants = Restaurant.all
     end
@@ -51,14 +51,17 @@ class RestaurantsController < ApplicationController
         end
     end
 
-    def review_average
-        arr = []
-        Restaurant.all.each { |r|
-            r.reviews.each { |rev| arr << rev.rating 
-                avg = 0
-                avg = arr.inject(0.0){|sum, n| (sum + n)}/ arr.size
-                    r.update(rating: avg)
-    }
-    }
-    end
+   
+
+
+    # def review_average
+    #     arr = []
+    #     Restaurant.all.each { |r|
+    #         r.reviews.each { |rev| arr << rev.rating 
+    #             avg = 0
+    #             avg = arr.inject(0.0){|sum, n| (sum + n)}/ arr.size
+    #                 r.update(rating: avg)
+    # }
+    # }
+    # end
 end
