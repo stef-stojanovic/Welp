@@ -103,7 +103,7 @@
             flex-flow: row;
             justify-content: center;
             align-items: center;
-            height: 50vh;
+            height: 90vh;
             width: 50vh;
         }
         .not-bootstrap-column-left, .not-bootstrap-column-right {
@@ -122,7 +122,7 @@
             overflow-y: scroll;
             margin: 30px;
             border: 5px solid #f39c12;
-            height: 300px;
+            height: 600px;
             width: 600px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -186,8 +186,8 @@
                             <% end %>
                         </tbody>
                     </table>
-                        <a class="btn btn-primary btn-lg btn-block button_green" href="<%= new_review_path %>">Add a Review</a>
                 </div>
+        <a class="btn btn-primary btn-lg al" href="<%=customer_path(session[:customer_id])%>">Home</a>    
         </div>
     </div>
 </body>
