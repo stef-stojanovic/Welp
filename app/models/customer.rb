@@ -28,8 +28,12 @@ class Customer < ApplicationRecord
     end
 
     def total_orders
+        if self.orders != []
         price_arr = self.orders.map {|order|order.price}
         price_arr.sum
+        else
+        price_arr = 0
+        end
     end
 
     
