@@ -9,8 +9,6 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">   
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   
-<!------ Include the above in your HEAD tag ---------->
 
     <style>
 		body,
@@ -60,9 +58,7 @@
 			border: 0 !important;
 			border-radius: 0.25rem 0 0 0.25rem !important;
 		}
-		.input_user,
-		}
-		}
+		
         .white_text {
             color: white;
         }
@@ -174,7 +170,7 @@
                                     <div class="input-group-append">
                                         <span class="input-group-text"><strong>Username</strong></span>
                                     </div>
-                                        <div class="form-control input_user">
+                                        <div class="form-control">
                                             <%=@customer.username%></div>
                                 </div>
                             </div>	
@@ -193,7 +189,7 @@
                  <span> 
                     <a class="btn btn-primary btn-sm" href="<%=restaurants_path%>">Restaurants</a>
                     <a class="btn btn-primary btn-sm" href="<%=edit_customer_path(@customer.id)%>">Edit my Profile</a>
-                    <a class="btn btn-primary btn-sm" data-method="DELETE" href="<%=customer_path(@customer.id)%>">Delete my Profile</a><br><br></span>
+                    <a class="btn btn-primary btn-sm" data-method="DELETE" data-confirm="Are you sure?" href="<%=customer_path(@customer.id)%>">Delete my Profile</a><br><br></span>
 
                     <a class="btn btn-danger btn-sm" href="/logout">Log Out</a>
                 </div>
