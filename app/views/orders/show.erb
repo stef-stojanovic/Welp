@@ -1,47 +1,115 @@
-<style> table, th, td {
-    border: 1px solid;
-}
-    table {
-        height: 100px
-    }
-    .image_cap{
-        max-height:150px;
-        width: 25%;
-    }
+<!DOCTYPE html>
+<html>
     
-</style>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">   
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
 
-<h1> Order - <%=@order.restaurant.name%> - <%=@order.customer.name%></h1>
+    <style>
+		body,
+		html {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(149,199,20,1) 0%, rgba(0,212,255,1) 96%);
+		}
+		
+        .container{
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            width: 50vh;
+        }
+        .not-bootstrap-column-right {
+            display: flex;
+            flex-flow: column;
+            flex: 1.2;
+            align-items: flex-end;
+        }
+     
+        .textBox {
+            display: block;
+            overflow-y: scroll;
+            margin: 30px;
+            border: 5px solid #f39c12;
+            height: 600px;
+            width: 1200px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
 
-<table>
-    <thead>
-        <tr>
-            <th>Item</th>
-            <th>Price</th>
-            <th>Description</th>
-            <th>Picture</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr> <% @order.foods.each do |food| %>
-            <td><%= food.name %></td>
-            <td><%= food.price %></td>
-            <td><%= food.description %></td>
-            <td><img class= "image_cap" src="<%= food.img_url %>"></td>
-        </tr>
-            <% end %>
-        <tr>
-            <td>Total</td>
-            <td><%= @order.price %>
-        </tr>
+        .table {
+            display: block;
+        }
+        .table tr{
+            line-height: 50px;
+            vertical-align: middle;
+        }
 
-    </tbody>
-</table>
-<%= link_to "Home", customer_path(session[:customer_id]) %>
-<%link_to "Edit", edit_order_path(@order.id)%><br>
+        .white_row {
+            background-color: white;
+        }
 
+        .table-header {
+            position: fixed;
+        }
+
+        .wide_column {
+            width: 300px
+        }
+
+        .orange {
+            background-color: #f39c12;
+            border: 1px solid #f39c12;
+            color: white;
+        }
+
+        .image_cap {
+            max-height:100%;
+            width: 100%;
+        }
+    
+        </style>
+</head>
+
+<body>
+    <div class= "container">
+        <div class="not-bootstrap-column-right">
+                <div class="textBox justify-content-right white_row">
+                    <table class="table">
+                        <thead>
+                            <tr class="orange">
+                            <th scope="col" class="wide_column">Item</th>
+                            <th scope="col"class="wide_column">Price</th>
+                            <th scope="col"class="wide_column">Description</th>
+                            <th scope="col">Image</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><% @order.foods.each do |food| %>
+                            <td><%=food.name%></td>
+                            <td><%=food.price%></td>
+                            <td><%=food.description%></td>
+                            <td><img class= "image_cap" src="<%= food.img_url %>"></td>
+
+                            </tr>
+                            <% end %>
+                        </tbody>
+                    </table>
+                </div>
+        <a class="btn btn-primary btn-lg al" href="<%=customer_path(session[:customer_id])%>">Home</a>    
+        </div>
+    </div>
 </body>
-<%link_to "Next", order_path(@order.increment)%><br>
-<%link_to "Back", order_path(@order.decrement)%><br>
-<%link_to "All Orders", orders_path%><br>
-<%link_to "Delete", order_path(@order.id), method: "DELETE"%>
+</html>
+
