@@ -88,10 +88,7 @@
                             <tr>
                             <td><%=@review.content%></td>
                             </tr>
-                            <td><%=link_to "Place Order", new_order_path%></td>
-                            </tr>
-                            </tr>
-                            <td><%=link_to "Create Review", new_review_path%></td>
+                            <td><%=link_to "Restaurant Page", restaurant_path(@review.restaurant.id)%></td>
                             </tr>
                         </tbody>
                     </table>
