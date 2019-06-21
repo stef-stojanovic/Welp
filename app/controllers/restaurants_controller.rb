@@ -1,5 +1,5 @@
 class RestaurantsController < ApplicationController
-    # before_action :review_average
+    before_action :review_average
     def index
         @restaurants = Restaurant.all
     end
