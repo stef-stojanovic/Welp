@@ -22,12 +22,13 @@ Food.destroy_all
     Restaurant.create(name: name, restaurant_type: type, description: description, street_address: address, zip: zip, phone_number: phone_number)
 end
 
-Customer.create(name: "Stefan Stojanovic", username: "stefan.stojanovic", password: "1234", description: "Flatiron", img_url:  "https://media.licdn.com/dms/image/C5603AQElx_wuovn-kw/profile-displayphoto-shrink_200_200/0?e=1566432000&v=beta&t=mpvI6QKcoXfYmEtebsU7TGPzcIIqZBzwqAoUXloEC2U")
-Customer.create(name: "Raúl Sanchez", username: "raul", password: "1234", description: "Flatiron", img_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0qn1cOiqWV_iC7zy9lRNekuH8mJtlpVt0gLLRyZI_2-fPDUvbkA")
-Customer.create(name: "Kurtis Leach", username: "kurtis", password: "1234", description: "Flatiron", img_url: "https://i2.wp.com/bluebonnetnews.com/wp-content/uploads/2018/12/Lawrence-Gilbert-Graham.jpg?fit=170%2C220&ssl=1")
-Customer.create(name: "Ariq Holland", username: "ariq", password: "1234", description: "Flatiron", img_url: "https://static.hudl.com/users/prod/7915937_e1584f62c5974f16bc32a333726bed3b.jpg")
-Customer.create(name: "Roysan Easo", username: "roy", password: "1234", description: "Flatiron", img_url: "https://pbs.twimg.com/profile_images/441775443637587969/1pUndhe9.jpeg")
-Customer.create(name: "Ethan Feinberg", username: "ethan", password: "1234", description: "Flatiron", img_url: "https://media.licdn.com/dms/image/C4E03AQFHWjbV6DAteA/profile-displayphoto-shrink_200_200/0?e=1566432000&v=beta&t=69-SdbkNhbIWw88B7lY-Eou_X5d2ukyfXel29uRhNu8")
+Customer.create(name: "Stefan Stojanovic", username: "stefan.stojanovic", password: "1234", description: "Flatiron Student", img_url:  "https://media.licdn.com/dms/image/C5603AQElx_wuovn-kw/profile-displayphoto-shrink_200_200/0?e=1566432000&v=beta&t=mpvI6QKcoXfYmEtebsU7TGPzcIIqZBzwqAoUXloEC2U")
+Customer.create(name: "Raúl Sanchez", username: "raul", password: "1234", description: "Flatiron Coach", img_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0qn1cOiqWV_iC7zy9lRNekuH8mJtlpVt0gLLRyZI_2-fPDUvbkA")
+Customer.create(name: "Kurtis Leach", username: "kurtis", password: "1234", description: "Flatiron Student", img_url: "https://i2.wp.com/bluebonnetnews.com/wp-content/uploads/2018/12/Lawrence-Gilbert-Graham.jpg?fit=170%2C220&ssl=1")
+Customer.create(name: "Ariq Holland", username: "ariq", password: "1234", description: "Flatiron Student", img_url: "https://static.hudl.com/users/prod/7915937_e1584f62c5974f16bc32a333726bed3b.jpg")
+Customer.create(name: "Roysan Easo", username: "roy", password: "1234", description: "Flatiron Student", img_url: "https://pbs.twimg.com/profile_images/441775443637587969/1pUndhe9.jpeg")
+Customer.create(name: "Ethan Feinberg", username: "ethan", password: "1234", description: "Flatiron Coah", img_url: "https://media.licdn.com/dms/image/C4E03AQFHWjbV6DAteA/profile-displayphoto-shrink_200_200/0?e=1566432000&v=beta&t=69-SdbkNhbIWw88B7lY-Eou_X5d2ukyfXel29uRhNu8")
+Customer.create(name: "Joshua Miles", username: "josh", password: "1234", description: "Flatiron Teacher", img_url: "https://avatars1.githubusercontent.com/u/30753026?s=400&v=4")
 
 Food.create(restaurant_id: Restaurant.first.id, name: "Wings", description: " ", price: 10, img_url: "https://www.buffalowildwings.com/globalassets/menuitems/bww_traditionalwings_sauce.png?format=jpg&width=900&v=2")
 Food.create(restaurant_id: Restaurant.first.id, name: "Burger", description: " ", price: 10, img_url: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2017/5/10/0/FNM_060117-Smashburger-Style-Burgers-Recipe_s4x3.jpg.rend.hgtvcom.616.462.suffix/1494459418304.jpeg")
