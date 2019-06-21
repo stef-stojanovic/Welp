@@ -10,4 +10,7 @@ post 'customers/authenticate', to: 'customers#authenticate'
 
 get '/logout', to: 'customers#log_out'
 
+get '/order_delete', to: 'orders#back_to_restaurant'
+
+get "/home_order_delete", to: 'customers#home'
 end

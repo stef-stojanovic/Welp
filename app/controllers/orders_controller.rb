@@ -63,4 +63,11 @@ class OrdersController < ApplicationController
     def permit_params
         params.require(:order).permit(:restaurant_id, :customer_id, :price)
     end
+
+    def back_to_restaurant
+        order= Order.all.last
+        res = order.restaurant_id
+        order.destroy
+        redirect_to restaurant_path(res)
+    end
 end

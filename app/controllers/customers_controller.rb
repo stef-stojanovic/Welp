@@ -70,7 +70,11 @@ class CustomersController < ApplicationController
         redirect_to '/'
     end
 
-    
+    def home
+        order= Order.all.last
+        order.destroy
+        redirect_to customer_path(session[:customer_id])
+    end
 
 
 end
