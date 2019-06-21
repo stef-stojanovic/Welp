@@ -57,7 +57,7 @@ class OrdersController < ApplicationController
     def destroy
         order= Order.find(params[:id])
         order.destroy
-        redirect_to orders_path
+        redirect_to customer_path(session[:customer_id])
     end
 
     def permit_params

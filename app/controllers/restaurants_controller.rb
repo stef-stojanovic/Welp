@@ -1,5 +1,5 @@
 class RestaurantsController < ApplicationController
-
+    before_action :review_average
     def index
         @restaurants = Restaurant.all
     end
@@ -49,5 +49,16 @@ class RestaurantsController < ApplicationController
             back_id = Restaurant.last.id
         else back_id = self.id - 1
         end
+    end
+
+    def review_average
+        arr = []
+        Restaurant.all.each { |r|
+            r.reviews.each { |rev| arr << rev.rating 
+                avg = 0
+                avg = arr.inject(0.0){|sum, n| (sum + n)}/ arr.size
+                    r.update(rating: avg)
+    }
+    }
     end
 end
