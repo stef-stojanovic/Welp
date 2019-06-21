@@ -10,6 +10,10 @@ class CustomersController < ApplicationController
 
     def create
         customer = Customer.create(permit_params)
+        if customer.img_url == ""
+            customer.update(img_url: "https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png")
+        end
+
         redirect_to '/'
     end
 
@@ -28,9 +32,10 @@ class CustomersController < ApplicationController
     end
     
     def destroy
+        session[:customer_id] = nil
         customer = Customer.find(params[:id])
         customer.destroy
-        redirect_to customers_path
+        redirect_to '/'
     end
 
     def permit_params

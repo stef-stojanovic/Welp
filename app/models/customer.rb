@@ -6,7 +6,10 @@ class Customer < ApplicationRecord
     has_many :restaurants, through: :reviews
     has_secure_password
 
-    validates :username, uniqueness: true
+    validates :username, uniqueness: {message: "Username already taken." }
+    validates :name, presence: {message: "Must have a Name." }
+    validates :username, presence: {message: "Must have a Username" }
+    validates :password, presence: {message: "Must have a password" }
 
     def increment
         if self.id == Customer.last.id

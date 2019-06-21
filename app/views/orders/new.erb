@@ -115,6 +115,13 @@ border:1px solid #ccc !important;
     background-color: #95c714 !important;
     border: 0 !important;
    }
+	.my_btn{
+	border-radius: 15px !important;
+   	border-radius: 15px !important;
+   	}
+	.my_color{
+	background-color: #fc5c65 !important;
+	}
     </style>
 </head>
 
@@ -125,7 +132,7 @@ border:1px solid #ccc !important;
 	<div class="d-flex justify-content-center">
 		<div class="card mt-5 col-md-4 animated bounceInDown myForm">
 			<div class="card-header">
-				<h4>Students Contact Details</h4>
+				<h4>Add Items to Your Order</h4>
 			</div>
 			<div class="card-body">
 				<form id="something" onsubmit = "Handlesubmit()" action="/orders/<%=session[:order_id]%>" method="POST">
@@ -153,12 +160,16 @@ border:1px solid #ccc !important;
 				</form>
 			</div>
 			<div class="card-footer">
-				<a class="btn btn-secondary btn-sm" id="add_more"><i class="fas fa-plus-circle"></i> Add</a>
-				<a class="btn btn-secondary btn-sm" id="remove_more"><i class="fas fa-trash-alt"></i> Remove</a>
-				<input type="submit"  form="something" class="btn btn-success btn-sm float-right submit_btn"/>
+				<a class="btn btn-success btn-sm" id="add_more"><i class="fas fa-plus-circle"></i> Add</a>
+				<a class="btn btn-danger btn-sm" id="remove_more"><i class="fas fa-trash-alt"></i> Remove</a>
+				<input type="submit"  form="something" class="btn btn-success btn-sm float-right submit_btn"/><br><br>
+				<a class="btn btn-primary btn-sm float-left my_btn " href="<%=customer_path(session[:customer_id])%>">Home</a> 
+				<a class="btn btn-danger btn-sm float-right my_btn my_color" href="<%=restaurant_path(@restaurant.id)%>">Back</a>   
 			</div>
 		</div>
-	</div>
+	</div><br>
+	<div class="col-md-14 text-center"> 
+	</div> 
 	</div>
     <script>
     
