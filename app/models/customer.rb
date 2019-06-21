@@ -31,6 +31,7 @@ class Customer < ApplicationRecord
         price_arr = self.orders.map {|order|order.price}
         price_arr.sum
     end
+
     
 
 end

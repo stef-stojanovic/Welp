@@ -17,6 +17,15 @@ class CustomersController < ApplicationController
         redirect_to '/'
     end
 
+    def search
+        if Customer.find_by(username:(params[:username])) != nil
+        @customer = Customer.find_by(username:(params[:username]))
+        redirect_to customer_path(@customer.id)
+        else
+            redirect_to customer_path(session[:customer_id])
+        end
+    end
+
     def show
         @customer = Customer.find(params[:id])
     end
@@ -60,6 +69,9 @@ class CustomersController < ApplicationController
         session[:customer_id] = nil
         redirect_to '/'
     end
+
+    
+
 
 end
 
