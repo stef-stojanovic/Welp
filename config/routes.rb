@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
 get '/', to: 'customers#login_form'
 
+get '/search', to: 'customers#search'
+
 post 'customers/authenticate', to: 'customers#authenticate'
 
 get '/logout', to: 'customers#log_out'

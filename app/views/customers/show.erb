@@ -139,6 +139,10 @@
             border: 1px solid #f39c12;
             color: white;
         }
+
+        .search_field {
+            margin-right: 30px;
+        }
     
         </style>
 </head>
@@ -191,10 +195,16 @@
                     <a class="btn btn-primary btn-sm" href="<%=edit_customer_path(@customer.id)%>">Edit my Profile</a>
                     <a class="btn btn-primary btn-sm" data-method="DELETE" data-confirm="Are you sure?" href="<%=customer_path(@customer.id)%>">Delete my Profile</a><br><br></span>
 
+                    <a class="btn btn-success btn-sm" href="<%=customer_path(session[:customer_id])%>">Home</a>
                     <a class="btn btn-danger btn-sm" href="/logout">Log Out</a>
+                    
                 </div>
         </div>
         <div class="not-bootstrap-column-right">
+            <div class="search_field"> 
+                <form method ="GET" action = '/search'> 
+                <input type="text" name="username" class="form-control input_user" value="" placeholder="Search..">
+                </div>
                 <div class="textBox justify-content-right white_row">
                     <table class="table">
                         <thead>
@@ -220,8 +230,9 @@
                         </table>
                         <a class="btn btn-primary btn-lg btn-block button_green" href="<%= new_review_path %>">Add a Review</a>
                     </div>
-
-                <div class="textBox justify-content-right white_row">
+            
+                <% if @customer.id == session[:customer_id] %>
+                    <div class="textBox justify-content-right white_row">
                         <table class="table">
                             <thead>
                                 <tr class="orange">
@@ -241,12 +252,19 @@
                                 <td><%=link_to "Delete", order_path(order.id), method: "DELETE", data: {confirm: "Are you sure?"} %></td>
                                 </tr>
                                 <% end %>
+                                <tr>
+                                <td><strong>Total</strong></td>
+                                <td> </td>
+                                <td><strong><%=@customer.total_orders%><strong></td>
+                                </tr>
 
                             </tbody>
                         </table>
                         <a class="btn btn-primary btn-lg btn-block button_green" href="<%= new_order_path %>">Add an Order</a>
-                </div>
-                </div>
+                    </div>
+                <% end %>
+
+            </div>
         </div>
     </div>
 
